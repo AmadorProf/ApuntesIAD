@@ -460,3 +460,12 @@ Una empresa de RRHH ha desplegado un asistente de IA que ayuda a los responsable
 <!-- _class: lead -->
 
 [← Volver a MP04](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD5 · Validación y puesta en servic…](../UD5_Validacion-puesta-servicio/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD7 · Vigilancia tecnologica de LLM… →](../UD7_Vigilancia-tecnologica-LLMs/)

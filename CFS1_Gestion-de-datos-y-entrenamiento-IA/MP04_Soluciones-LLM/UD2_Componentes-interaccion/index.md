@@ -464,3 +464,12 @@ Desarrolla un asistente de soporte tecnico para una empresa de software. El asis
 <!-- _class: lead -->
 
 [← Volver a MP04](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD1 · Análisis del caso de uso y se…](../UD1_Analisis-caso-uso/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD3 · Integracion con fuentes, herr… →](../UD3_Integracion-RAG/)

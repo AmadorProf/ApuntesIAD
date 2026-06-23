@@ -385,3 +385,12 @@ Los hallazgos de la vigilancia tecnológica solo generan valor cuando se transfi
 <!-- _class: lead -->
 
 [← Volver a MP03](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD5 · Protocolización y documentaci…](../UD5_Protocolizacion-documentacion/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD7 · Gestión integral: seguridad,… →](../UD7_Gestion-seguridad-sostenibilidad/)

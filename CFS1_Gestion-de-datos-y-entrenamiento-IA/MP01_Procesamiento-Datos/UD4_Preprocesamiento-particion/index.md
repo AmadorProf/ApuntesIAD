@@ -511,3 +511,12 @@ for chunk in pd.read_csv("datos_grandes.csv", chunksize=100_000):
 <!-- _class: lead -->
 
 [← Volver a MP01](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD3 · Verificación de la calidad de…](../UD3_Verificacion-calidad/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD5 · Gestión, versionado y cumplim… →](../UD5_Gestion-versionado-normativa/)

@@ -276,3 +276,12 @@ Una empresa de logistica quiere desplegar un asistente interno que responda preg
 <!-- _class: lead -->
 
 [← Volver a MP04](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[Volver al módulo](../) &nbsp;·&nbsp; [UD2 · Componentes de interaccion co… →](../UD2_Componentes-interaccion/)

@@ -648,3 +648,12 @@ Se ha desplegado un servidor vLLM en una red corporativa con los siguientes prob
 ---
 
 [← Volver a MP04](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD5 · Validación de la capacidad op…](../UD5_Validacion-capacidad-operativa/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD7 · Responsabilidad, sostenibilid… →](../UD7_Responsabilidad-sostenibilidad-PRL/)

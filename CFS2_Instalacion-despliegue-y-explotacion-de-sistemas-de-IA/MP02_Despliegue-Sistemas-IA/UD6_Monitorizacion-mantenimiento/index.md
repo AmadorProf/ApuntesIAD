@@ -367,3 +367,12 @@ Un modelo de prediccion de precios inmobiliarios fue entrenado con datos de 2023
 ---
 
 [← Volver a MP02](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD5 · Puesta en servicio](../UD5_Puesta-en-servicio/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD7 · Gobernanza, trazabilidad y cu… →](../UD7_Gobernanza-trazabilidad-normativa/)

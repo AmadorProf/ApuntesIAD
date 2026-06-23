@@ -384,3 +384,12 @@ Construye un sistema RAG que permita responder preguntas sobre un conjunto de tr
 <!-- _class: lead -->
 
 [← Volver a MP04](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD2 · Componentes de interaccion co…](../UD2_Componentes-interaccion/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD4 · Comportamientos agenticos →](../UD4_Comportamientos-agenticos/)

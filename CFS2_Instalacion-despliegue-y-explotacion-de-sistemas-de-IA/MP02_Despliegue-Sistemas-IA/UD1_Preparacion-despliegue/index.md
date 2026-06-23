@@ -288,3 +288,12 @@ Checklist en formato tabla. Incluir al menos: hardware, software/dependencias, l
 ---
 
 [← Volver a MP02](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[Volver al módulo](../) &nbsp;·&nbsp; [UD2 · Despliegue de la infraestruct… →](../UD2_Despliegue-infraestructura/)

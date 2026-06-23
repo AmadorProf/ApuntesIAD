@@ -380,3 +380,12 @@ El **Real Decreto 110/2015** transpone la **Directiva 2012/19/UE** sobre residuo
 **Prevencion de riesgos, ergonomia y gestion de residuos en infraestructuras de IA**
 
 [← Volver a MP01](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD5 · Resolución de incidencias en…](../UD5_Resolucion-incidencias/) &nbsp;·&nbsp; [Volver al módulo](../)

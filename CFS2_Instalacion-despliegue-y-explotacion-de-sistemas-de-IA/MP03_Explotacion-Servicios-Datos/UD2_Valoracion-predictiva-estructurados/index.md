@@ -302,3 +302,12 @@ Experimento --> Modelo en "staging" --> Evaluación humana --> Modelo en "produc
 <!-- _class: lead -->
 
 [← Volver a MP03](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD1 · Implementación de la platafor…](../UD1_Plataforma-servicios-IA/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD3 · Análisis de series temporales →](../UD3_Analisis-series-temporales/)

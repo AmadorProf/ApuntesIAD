@@ -446,3 +446,12 @@ Preparar un entorno de inferencia local en una máquina con Ubuntu 22.04 y una G
 ---
 
 [← Volver a MP04](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD2 · Selección y dimensionamiento…](../UD2_Dimensionamiento-recursos/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD4 · Puesta en servicio del modelo →](../UD4_Puesta-servicio-modelo/)

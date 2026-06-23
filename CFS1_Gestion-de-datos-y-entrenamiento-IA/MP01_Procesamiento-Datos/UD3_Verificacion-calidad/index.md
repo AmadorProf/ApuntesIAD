@@ -449,3 +449,12 @@ schema.validate(df)  # lanza excepción si falla
 <!-- _class: lead -->
 
 [← Volver a MP01](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD2 · Exploración y análisis del co…](../UD2_Exploracion-analisis/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD4 · Preprocesamiento y partición… →](../UD4_Preprocesamiento-particion/)

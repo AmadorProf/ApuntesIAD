@@ -681,3 +681,12 @@ sudo reboot
 <!-- _class: lead -->
 
 [← Volver a MP01](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD4 · Actualización de componentes](../UD4_Actualizacion-componentes/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD6 · Prevención de riesgos y gesti… →](../UD6_PRL-gestion-residuos/)

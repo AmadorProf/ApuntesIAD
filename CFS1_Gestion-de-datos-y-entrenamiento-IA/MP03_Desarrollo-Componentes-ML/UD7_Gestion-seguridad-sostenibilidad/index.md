@@ -421,3 +421,12 @@ pip-audit --require-hashes -r requirements.txt
 <!-- _class: lead -->
 
 [← Volver a MP03](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD6 · Vigilancia tecnológica](../UD6_Vigilancia-tecnologica/) &nbsp;·&nbsp; [Volver al módulo](../)

@@ -517,3 +517,12 @@ print(f"Dimension del embedding: {embedding.shape}")  # [1, 768]
 <!-- _class: lead -->
 
 [← Volver a MP03](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD2 · Despliegue de modelos con fra…](../UD2_Despliegue-modelos-frameworks/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD4 · Validación de la calidad de l… →](../UD4_Validacion-calidad-componentes/)

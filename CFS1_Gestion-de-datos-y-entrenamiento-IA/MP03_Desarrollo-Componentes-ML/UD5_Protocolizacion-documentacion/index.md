@@ -470,3 +470,12 @@ F1 en test: 0.820 (mejora de 0.013 respecto a v1.1.0)"
 <!-- _class: lead -->
 
 [← Volver a MP03](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD4 · Validación de la calidad de l…](../UD4_Validacion-calidad-componentes/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD6 · Vigilancia tecnológica →](../UD6_Vigilancia-tecnologica/)

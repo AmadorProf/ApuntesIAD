@@ -356,3 +356,12 @@ Un experimento sin documentación no es reproducible. La documentación de confi
 | Configura los parámetros del optimizador | Elige lr, batch size y épocas con criterio técnico |
 | Documenta la configuración | Produce un registro completo antes del entrenamiento |
 | Adapta modelo preentrenado | Congela capas correctamente y sustituye la cabeza de clasificación |
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD1 · Selección de la estrategia de…](../UD1_Estrategia-entrenamiento/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD3 · Operativización del entrenami… →](../UD3_Operativizacion-entrenamiento/)

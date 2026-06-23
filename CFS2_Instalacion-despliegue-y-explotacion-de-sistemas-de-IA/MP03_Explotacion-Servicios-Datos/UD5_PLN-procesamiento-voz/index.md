@@ -370,3 +370,12 @@ Antes de desplegar en producción, evaluar la tasa de error (WER) por subgrupo y
 <!-- _class: lead -->
 
 [← Volver a MP03](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD4 · Visión artificial sobre imáge…](../UD4_Vision-artificial-imagen-video/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD6 · Inteligencia de negocio y ana… →](../UD6_Inteligencia-negocio-analitica/)

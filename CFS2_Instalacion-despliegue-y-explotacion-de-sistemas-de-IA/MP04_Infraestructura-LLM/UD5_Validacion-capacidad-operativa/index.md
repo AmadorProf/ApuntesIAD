@@ -420,3 +420,12 @@ Se ha desplegado vLLM con Mistral 7B BF16 en una GPU A10G (24 GB VRAM). Los requ
 ---
 
 [← Volver a MP04](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD4 · Puesta en servicio del modelo](../UD4_Puesta-servicio-modelo/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD6 · Seguridad, privacidad y traza… →](../UD6_Seguridad-privacidad-trazabilidad/)

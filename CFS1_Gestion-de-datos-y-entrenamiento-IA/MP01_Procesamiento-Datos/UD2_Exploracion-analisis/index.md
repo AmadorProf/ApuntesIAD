@@ -424,3 +424,12 @@ En aprendizaje supervisado, la calidad del etiquetado es tan crítica como la ca
 <!-- _class: lead -->
 
 [← Volver a MP01](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD1 · Extracción de datos desde las…](../UD1_Extraccion-datos/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD3 · Verificación de la calidad de… →](../UD3_Verificacion-calidad/)

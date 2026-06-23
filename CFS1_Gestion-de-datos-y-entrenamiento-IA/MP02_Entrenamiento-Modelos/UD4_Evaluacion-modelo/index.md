@@ -375,3 +375,12 @@ Tras la evaluación, se debe tomar una decisión explícita y documentada sobre 
 | Aplica XAI | Usa SHAP o LIME para identificar variables influyentes en las predicciones |
 | Analiza patrones de error | Identifica en qué segmentos o clases falla más el modelo |
 | Decide sobre el modelo | Documenta la decisión de validar o rediseñar con criterios técnicos |
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD3 · Operativización del entrenami…](../UD3_Operativizacion-entrenamiento/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD5 · Versionado y ficha técnica de… →](../UD5_Versionado-ficha-tecnica/)

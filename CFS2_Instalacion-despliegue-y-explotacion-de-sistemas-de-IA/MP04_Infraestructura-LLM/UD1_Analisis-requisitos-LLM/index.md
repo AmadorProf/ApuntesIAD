@@ -332,3 +332,12 @@ Una empresa de consultoría legal quiere desplegar un asistente interno basado e
 ---
 
 [← Volver a MP04](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[Volver al módulo](../) &nbsp;·&nbsp; [UD2 · Selección y dimensionamiento… →](../UD2_Dimensionamiento-recursos/)

@@ -374,3 +374,12 @@ signal.signal(signal.SIGTERM, guardar_checkpoint_y_salir)  # señal del SO
 <!-- _class: lead -->
 
 [← Volver a MP01](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD5 · Gestión, versionado y cumplim…](../UD5_Gestion-versionado-normativa/) &nbsp;·&nbsp; [Volver al módulo](../)

@@ -31,28 +31,27 @@ jobs:
 
       - name: Build presentations
         run: |
+          set -e
           mkdir -p _site
-
-          # Copy landing page
           cp index.html _site/index.html
+          touch _site/.nojekyll
 
-          # Convert all module index.md → index.html
-          find . -name "index.md" \
-            -not -path "./.github/*" \
-            -not -path "./_site/*" \
-            -not -path "./node_modules/*" \
-            -print0 | while IFS= read -r -d '' f; do
-            rel_dir=$(dirname "${f#./}")
-            mkdir -p "_site/${rel_dir}"
-            echo "→ Convirtiendo ${f}..."
-            marp "$f" \
-              --html \
-              --allow-local-files \
-              --output "_site/${rel_dir}/index.html"
+          modules=(
+            "CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos"
+            "CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos"
+            "CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML"
+            "CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM"
+            "CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA"
+            "CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA"
+            "CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos"
+            "CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM"
+          )
+
+          for module in "${modules[@]}"; do
+            echo "Convirtiendo ${module}/index.md..."
+            mkdir -p "_site/${module}"
+            marp "${module}/index.md" --html --output "_site/${module}/index.html"
           done
-
-      - name: Create .nojekyll
-        run: touch _site/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

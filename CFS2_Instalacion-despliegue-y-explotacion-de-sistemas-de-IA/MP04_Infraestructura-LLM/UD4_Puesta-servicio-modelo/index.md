@@ -342,3 +342,12 @@ Poner en servicio el modelo `Qwen2.5-7B-Instruct` en un servidor con vLLM. Los r
 ---
 
 [← Volver a MP04](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD3 · Preparación del entorno de ej…](../UD3_Preparacion-entorno-ejecucion/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD5 · Validación de la capacidad op… →](../UD5_Validacion-capacidad-operativa/)

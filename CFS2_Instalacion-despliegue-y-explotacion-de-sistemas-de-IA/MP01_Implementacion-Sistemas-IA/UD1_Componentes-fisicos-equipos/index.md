@@ -480,3 +480,12 @@ Para cada componente, cumplimentar una ficha de registro con al menos los siguie
 <!-- _class: lead -->
 
 [← Volver a MP01](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[Volver al módulo](../) &nbsp;·&nbsp; [UD2 · Administración de componentes… →](../UD2_Administracion-componentes-aplicaciones/)

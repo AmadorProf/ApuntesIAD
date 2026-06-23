@@ -403,3 +403,12 @@ Has desplegado un asistente LLM para un departamento de atencion al ciudadano de
 <!-- _class: lead -->
 
 [← Volver a MP04](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD7 · Vigilancia tecnologica de LLM…](../UD7_Vigilancia-tecnologica-LLMs/) &nbsp;·&nbsp; [Volver al módulo](../)

@@ -351,3 +351,12 @@ Una planta de fabricacion tiene 50 sensores de temperatura y vibracion que publi
 ---
 
 [← Volver a MP02](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD3 · Instalación de aplicaciones d…](../UD3_Instalacion-aplicaciones-despliegue/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD5 · Puesta en servicio →](../UD5_Puesta-en-servicio/)

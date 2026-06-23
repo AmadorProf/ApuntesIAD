@@ -373,3 +373,12 @@ Antes de publicar cualquier informe, validar los datos en tres frentes:
 <!-- _class: lead -->
 
 [← Volver a MP03](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD5 · Procesamiento de lenguaje nat…](../UD5_PLN-procesamiento-voz/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD7 · Gestión integral: seguridad,… →](../UD7_Gestion-seguridad-sostenibilidad/)

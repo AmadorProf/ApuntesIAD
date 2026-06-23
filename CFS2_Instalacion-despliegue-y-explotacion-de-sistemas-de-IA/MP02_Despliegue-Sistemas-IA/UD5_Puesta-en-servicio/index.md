@@ -409,3 +409,12 @@ Un equipo debe desplegar la version 4.0 de un modelo de recomendacion de product
 ---
 
 [← Volver a MP02](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD4 · Integración en el flujo produ…](../UD4_Integracion-flujo-productivo/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD6 · Monitorización y mantenimient… →](../UD6_Monitorizacion-mantenimiento/)

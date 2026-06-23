@@ -302,3 +302,12 @@ La estrategia debe documentarse como un artefacto formal que forme parte del his
 | Documenta la estrategia | Produce un documento estructurado con problema, paradigma, familia, variables y restricciones |
 | Analiza variables de entrada y salida | Construye la tabla de variables con tipo, rango, correlación y decisión de inclusión |
 | Decide sobre fine-tuning | Aplica los criterios de volumen, recursos y similitud de dominio correctamente |
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[Volver al módulo](../) &nbsp;·&nbsp; [UD2 · Configuración del modelo y de… →](../UD2_Configuracion-modelo-entorno/)

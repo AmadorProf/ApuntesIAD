@@ -303,3 +303,12 @@ La eficiencia en el consumo de recursos es una responsabilidad profesional y una
 <!-- _class: lead -->
 
 [← Volver a MP03](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[Volver al módulo](../) &nbsp;·&nbsp; [UD2 · Valoración predictiva de dato… →](../UD2_Valoracion-predictiva-estructurados/)

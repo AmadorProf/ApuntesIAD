@@ -469,3 +469,12 @@ Este registro se almacena junto al archivo extraído y es la base del linaje de 
 <!-- _class: lead -->
 
 [← Volver a MP01](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[Volver al módulo](../) &nbsp;·&nbsp; [UD2 · Exploración y análisis del co… →](../UD2_Exploracion-analisis/)

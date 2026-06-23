@@ -631,3 +631,12 @@ sudo nvidia-smi -ac 877,1410   # mem_clock,graphics_clock en MHz (A100)
 <!-- _class: lead -->
 
 [← Volver a MP01](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD3 · Implementación de componentes…](../UD3_Implementacion-explotacion/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD5 · Resolución de incidencias en… →](../UD5_Resolucion-incidencias/)

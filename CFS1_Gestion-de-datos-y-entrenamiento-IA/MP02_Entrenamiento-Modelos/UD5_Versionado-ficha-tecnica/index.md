@@ -340,3 +340,12 @@ Diseñado para plataformas educativas en español de España.
 | Garantiza trazabilidad | El modelo puede reproducirse exactamente a partir de los artefactos registrados |
 | Registra en MLflow | Configura experiment, log de parámetros, métricas y modelo con firma |
 | Elabora la ficha técnica completa | Cubre todas las secciones obligatorias incluyendo limitaciones y sesgos |
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD4 · Evaluación del modelo entrena…](../UD4_Evaluacion-modelo/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD6 · Trabajo responsable, sostenib… →](../UD6_Responsabilidad-sostenibilidad-PRL/)

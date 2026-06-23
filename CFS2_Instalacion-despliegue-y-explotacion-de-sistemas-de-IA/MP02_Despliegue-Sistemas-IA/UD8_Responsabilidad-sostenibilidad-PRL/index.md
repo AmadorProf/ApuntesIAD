@@ -401,3 +401,12 @@ El técnico de despliegue debe conocer y cumplir el Plan de emergencias del cent
 CFS — Instalación, despliegue y explotación de sistemas de IA (IAD)
 
 [← Volver al módulo](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD7 · Gobernanza, trazabilidad y cu…](../UD7_Gobernanza-trazabilidad-normativa/) &nbsp;·&nbsp; [Volver al módulo](../)

@@ -342,3 +342,12 @@ Plan de instalacion con orden, justificaciones y checklist de verificacion.
 ---
 
 [← Volver a MP02](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD2 · Despliegue de la infraestruct…](../UD2_Despliegue-infraestructura/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD4 · Integración en el flujo produ… →](../UD4_Integracion-flujo-productivo/)

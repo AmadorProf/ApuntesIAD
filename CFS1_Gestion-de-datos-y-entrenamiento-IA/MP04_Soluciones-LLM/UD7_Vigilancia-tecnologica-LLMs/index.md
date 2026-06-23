@@ -395,3 +395,12 @@ Tu equipo mantiene dos soluciones en produccion: un asistente RAG para consultas
 <!-- _class: lead -->
 
 [← Volver a MP04](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD6 · Seguridad, privacidad y uso e…](../UD6_Seguridad-privacidad-etica/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD8 · Responsabilidad profesional,… →](../UD8_Responsabilidad-sostenibilidad-PRL/)

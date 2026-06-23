@@ -386,3 +386,12 @@ with mlflow.start_run(run_name="experimento_001"):
 | Aplica técnicas de mejora | Implementa early stopping y regularización ante resultados insatisfactorios |
 | Documenta los experimentos | Registra configuración y resultados de cada ensayo con herramienta de tracking |
 | Lanza el entrenamiento definitivo | Ejecuta con semilla fijada, configuración documentada y checkpoint activado |
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD2 · Configuración del modelo y de…](../UD2_Configuracion-modelo-entorno/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD4 · Evaluación del modelo entrena… →](../UD4_Evaluacion-modelo/)

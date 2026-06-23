@@ -335,3 +335,12 @@ Una vez en producción, el modelo debe monitorizarse continuamente.
 <!-- _class: lead -->
 
 [← Volver a MP03](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD2 · Valoración predictiva de dato…](../UD2_Valoracion-predictiva-estructurados/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD4 · Visión artificial sobre imáge… →](../UD4_Vision-artificial-imagen-video/)

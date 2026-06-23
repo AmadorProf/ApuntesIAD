@@ -331,3 +331,12 @@ e indicadores         análisis/pipeline    vs. objetivo        y volver a Plan
 <!-- _class: lead -->
 
 [← Volver a MP03](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD6 · Inteligencia de negocio y ana…](../UD6_Inteligencia-negocio-analitica/) &nbsp;·&nbsp; [Volver al módulo](../)

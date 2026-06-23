@@ -34,6 +34,7 @@ jobs:
           set -e
           mkdir -p _site
           cp index.html _site/index.html
+          cp indice.html _site/indice.html
           touch _site/.nojekyll
 
           mapfile -t FILES < <(find . -name "index.md" \
@@ -47,6 +48,7 @@ jobs:
             mkdir -p "_site/$dir"
             echo "Converting $f ..."
             marp "$f" --html --output "_site/$dir/index.html"
+            marp "$f" --pdf --allow-local-files --output "_site/$dir/slides.pdf"
           done
 
       - name: Setup Pages

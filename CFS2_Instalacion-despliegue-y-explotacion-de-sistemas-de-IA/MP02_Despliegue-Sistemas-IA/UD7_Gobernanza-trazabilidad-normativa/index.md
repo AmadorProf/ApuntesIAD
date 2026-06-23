@@ -318,3 +318,12 @@ Plan de gobernanza en formato tabla con justificaciones normativas.
 ---
 
 [← Volver a MP02](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD6 · Monitorización y mantenimient…](../UD6_Monitorizacion-mantenimiento/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD8 · Responsabilidad profesional,… →](../UD8_Responsabilidad-sostenibilidad-PRL/)

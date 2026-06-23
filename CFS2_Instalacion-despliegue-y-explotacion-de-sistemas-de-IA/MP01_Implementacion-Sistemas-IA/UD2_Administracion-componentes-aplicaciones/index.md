@@ -429,3 +429,12 @@ La administracion de sistemas de IA implica alta carga cognitiva: multiples herr
 # Fin de la unidad
 
 [← Volver a MP01](../)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD1 · Integración de componentes fí…](../UD1_Componentes-fisicos-equipos/) &nbsp;·&nbsp; [Volver al módulo](../) &nbsp;·&nbsp; [UD3 · Implementación de componentes… →](../UD3_Implementacion-explotacion/)

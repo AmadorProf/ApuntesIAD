@@ -276,3 +276,12 @@ signal.signal(signal.SIGTERM, guardar_y_salir)  # señal del SO
 | Aplica medidas ergonómicas | Diseña su entorno y sesión de trabajo con criterios de ergonomía física y cognitiva |
 | Aplica medidas de prevención de riesgos | Identifica riesgos psicosociales propios del rol y aplica medidas preventivas |
 | Conoce el plan de emergencias | Localiza salidas, extintor adecuado y protocolo de parada segura del sistema |
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD5 · Versionado y ficha técnica de…](../UD5_Versionado-ficha-tecnica/) &nbsp;·&nbsp; [Volver al módulo](../)

@@ -514,3 +514,12 @@ Una empresa de tamano medio dispone de tres servidores GPU (2x RTX 3090, 1x A100
 ---
 
 [← Volver a MP04](../index.md)
+
+
+---
+
+<!-- nav-slide -->
+
+## Navegación
+
+[← UD6 · Seguridad, privacidad y traza…](../UD6_Seguridad-privacidad-trazabilidad/) &nbsp;·&nbsp; [Volver al módulo](../)

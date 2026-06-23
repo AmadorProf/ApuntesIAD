@@ -9,172 +9,230 @@
 
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f8fafc;
+      background: #f1f5f9;
       color: #1e293b;
-      min-height: 100vh;
     }
 
+    /* ── HEADER ── */
     header {
       background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
       color: #fff;
-      padding: 48px 32px 40px;
+      padding: 40px 32px 36px;
       text-align: center;
     }
-
     header .badge {
       display: inline-block;
       background: rgba(255,255,255,0.18);
-      border: 1px solid rgba(255,255,255,0.35);
+      border: 1px solid rgba(255,255,255,0.3);
       border-radius: 20px;
-      font-size: 0.78em;
+      font-size: 0.72em;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       padding: 4px 14px;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
+    header h1 { font-size: 2em; font-weight: 700; line-height: 1.2; margin-bottom: 6px; }
+    header p  { font-size: 0.95em; opacity: 0.82; }
 
-    header h1 {
-      font-size: 2em;
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 10px;
+    /* ── DIAGRAMA DE FLUJO ── */
+    .diagram-section {
+      background: white;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 32px 24px;
+      text-align: center;
     }
-
-    header p {
-      font-size: 1.05em;
-      opacity: 0.85;
+    .diagram-section h2 {
+      font-size: 0.8em;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 24px;
     }
+    .flow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .flow-node {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 10px 18px;
+      font-size: 0.82em;
+      font-weight: 600;
+      color: #334155;
+      text-align: center;
+      min-width: 110px;
+      position: relative;
+    }
+    .flow-node.start { background: #1e3a5f; color: white; border-color: #1e3a5f; }
+    .flow-node.cfs1  { background: #eff6ff; border-color: #3b82f6; color: #1d4ed8; }
+    .flow-node.cfs2  { background: #ecfdf5; border-color: #10b981; color: #065f46; }
+    .flow-node.ud    { background: #fefce8; border-color: #f59e0b; color: #92400e; }
+    .flow-node.pdf   { background: #fdf4ff; border-color: #a855f7; color: #6b21a8; }
+    .flow-node .sub  { font-size: 0.8em; font-weight: 400; color: inherit; opacity: 0.75; margin-top: 2px; }
+    .flow-arrow {
+      font-size: 1.3em;
+      color: #94a3b8;
+      padding: 0 6px;
+      font-weight: 300;
+    }
+    .flow-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: flex-start;
+    }
+    .flow-group-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .flow-row { display: flex; align-items: center; gap: 0; }
+    .flow-legend {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      font-size: 0.76em;
+      color: #64748b;
+    }
+    .flow-legend span { display: flex; align-items: center; gap: 6px; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
 
+    /* ── MAIN ── */
     main {
-      max-width: 1000px;
+      max-width: 1060px;
       margin: 0 auto;
-      padding: 48px 24px 64px;
+      padding: 36px 20px 64px;
     }
 
-    .cfs-block {
-      margin-bottom: 48px;
-    }
-
+    /* ── CFS SECTION ── */
+    .cfs-block { margin-bottom: 40px; }
     .cfs-header {
       display: flex;
       align-items: center;
-      gap: 14px;
-      margin-bottom: 20px;
-      padding-bottom: 14px;
+      gap: 12px;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
       border-bottom: 2px solid #e2e8f0;
     }
-
     .cfs-tag {
       background: #1e3a5f;
       color: #fff;
       font-size: 0.72em;
       font-weight: 700;
-      letter-spacing: 0.06em;
       padding: 5px 12px;
       border-radius: 6px;
       white-space: nowrap;
-      flex-shrink: 0;
+      letter-spacing: 0.05em;
     }
+    .cfs-tag.g { background: #065f46; }
+    .cfs-header h2 { font-size: 1.05em; font-weight: 600; color: #1e293b; }
 
-    .cfs-tag.cfs2 {
-      background: #065f46;
-    }
-
-    .cfs-header h2 {
-      font-size: 1.15em;
-      font-weight: 600;
-      color: #1e293b;
-      line-height: 1.3;
-    }
-
-    .modules-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-      gap: 16px;
-    }
-
-    .module-card {
-      background: #fff;
+    /* ── MODULE ACCORDION ── */
+    details {
+      background: white;
       border: 1px solid #e2e8f0;
       border-radius: 10px;
-      padding: 20px 22px;
-      text-decoration: none;
-      color: inherit;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    details[open] { border-color: #93c5fd; }
+    details.cfs2[open] { border-color: #6ee7b7; }
+
+    summary {
       display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      transition: box-shadow 0.18s, border-color 0.18s, transform 0.15s;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      cursor: pointer;
+      user-select: none;
+      list-style: none;
     }
-
-    .module-card:hover {
-      box-shadow: 0 4px 20px rgba(37,99,235,0.12);
-      border-color: #93c5fd;
-      transform: translateY(-2px);
-    }
-
-    .module-card.cfs2:hover {
-      box-shadow: 0 4px 20px rgba(6,95,70,0.12);
-      border-color: #6ee7b7;
-    }
+    summary::-webkit-details-marker { display: none; }
+    summary:hover { background: #f8fafc; }
 
     .mp-badge {
       background: #eff6ff;
       color: #1d4ed8;
-      font-size: 0.75em;
+      font-size: 0.72em;
       font-weight: 700;
-      padding: 6px 10px;
+      padding: 5px 10px;
       border-radius: 6px;
       white-space: nowrap;
       flex-shrink: 0;
-      letter-spacing: 0.04em;
     }
+    details.cfs2 .mp-badge { background: #ecfdf5; color: #065f46; }
 
-    .module-card.cfs2 .mp-badge {
-      background: #ecfdf5;
-      color: #065f46;
-    }
+    .mp-info { flex: 1; }
+    .mp-info h3 { font-size: 0.95em; font-weight: 600; margin-bottom: 3px; }
+    .mp-meta { font-size: 0.76em; color: #64748b; display: flex; gap: 14px; flex-wrap: wrap; }
 
-    .module-info h3 {
-      font-size: 0.97em;
-      font-weight: 600;
-      margin-bottom: 4px;
-      color: #1e293b;
-    }
-
-    .module-meta {
-      font-size: 0.78em;
-      color: #64748b;
-      display: flex;
-      gap: 10px;
-    }
-
-    .module-meta span::before {
-      content: '·';
-      margin-right: 10px;
-    }
-
-    .module-meta span:first-child::before {
-      content: '';
-      margin-right: 0;
-    }
-
-    .arrow {
-      margin-left: auto;
-      color: #cbd5e1;
+    .chevron {
+      color: #94a3b8;
       font-size: 1.1em;
-      align-self: center;
+      transition: transform 0.2s;
       flex-shrink: 0;
-      transition: color 0.15s;
     }
+    details[open] .chevron { transform: rotate(90deg); }
 
-    .module-card:hover .arrow {
-      color: #2563eb;
+    /* ── UD LIST ── */
+    .ud-list {
+      border-top: 1px solid #f1f5f9;
+      padding: 12px 20px 16px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 6px;
     }
-
-    .module-card.cfs2:hover .arrow {
-      color: #059669;
+    .ud-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      border-radius: 7px;
+      text-decoration: none;
+      color: #1e293b;
+      font-size: 0.84em;
+      transition: background 0.15s;
     }
+    .ud-link:hover { background: #f0f9ff; }
+    details.cfs2 .ud-link:hover { background: #f0fdf4; }
+    .ud-num {
+      background: #dbeafe;
+      color: #1d4ed8;
+      font-size: 0.7em;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 10px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    details.cfs2 .ud-num { background: #d1fae5; color: #065f46; }
+    .ud-title { line-height: 1.3; }
+    .ud-actions {
+      margin-left: auto;
+      display: flex;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    .ud-actions a {
+      font-size: 0.68em;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-decoration: none;
+      border: 1px solid;
+    }
+    .btn-slides { color: #2563eb; border-color: #bfdbfe; background: #eff6ff; }
+    .btn-pdf    { color: #7c3aed; border-color: #ddd6fe; background: #faf5ff; }
+    details.cfs2 .btn-slides { color: #059669; border-color: #a7f3d0; background: #ecfdf5; }
 
+    /* ── FOOTER ── */
     footer {
       text-align: center;
       font-size: 0.78em;
@@ -182,152 +240,410 @@
       padding: 24px;
       border-top: 1px solid #e2e8f0;
     }
+    footer a { color: #3b82f6; text-decoration: none; }
   </style>
 </head>
 <body>
 
 <header>
   <div class="badge">Familia Profesional · Inteligencia Artificial y Data</div>
-  <h1>Certificados de Formación Especializada</h1>
-  <p>Inteligencia Artificial y Data (IAD) — Nivel 3</p>
+  <h1>Apuntes IAD</h1>
+  <p>Nivel 3 · CFS IAD</p>
 </header>
+
+<!-- DIAGRAMA DE FLUJO -->
+<div class="diagram-section">
+  <h2>Estructura de navegación</h2>
+  <div class="flow">
+    <div class="flow-node start">
+      Inicio
+      <div class="sub">index.html</div>
+    </div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-group-inner">
+      <div class="flow-node cfs1">CFS1 · 4 módulos<div class="sub">790 h · Gestión de datos e IA</div></div>
+      <div class="flow-node cfs2">CFS2 · 4 módulos<div class="sub">730 h · Instalación y despliegue</div></div>
+    </div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-node" style="background:#f8fafc;border-color:#94a3b8;">
+      Módulo (MP)
+      <div class="sub">6–8 unidades</div>
+    </div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-node ud">
+      UD
+      <div class="sub">20–25 diapositivas</div>
+    </div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-group-inner">
+      <div class="flow-node" style="background:#f0fdf4;border-color:#4ade80;color:#166534;font-size:0.8em;min-width:90px;">Presentación<div class="sub">HTML interactivo</div></div>
+      <div class="flow-node pdf" style="font-size:0.8em;min-width:90px;">PDF<div class="sub">descargable</div></div>
+    </div>
+  </div>
+  <div class="flow-legend">
+    <span><span class="dot" style="background:#1e3a5f"></span>Portada</span>
+    <span><span class="dot" style="background:#3b82f6"></span>CFS1 — azul</span>
+    <span><span class="dot" style="background:#10b981"></span>CFS2 — verde</span>
+    <span><span class="dot" style="background:#f59e0b"></span>Unidades didácticas (55 total)</span>
+    <span><span class="dot" style="background:#a855f7"></span>PDF por UD</span>
+  </div>
+</div>
 
 <main>
 
-  <!-- CFS 1 -->
+  <!-- ══════════════════ CFS 1 ══════════════════ -->
   <div class="cfs-block">
     <div class="cfs-header">
       <span class="cfs-tag">CFS 1</span>
-      <h2>Gestión de datos y entrenamiento IA</h2>
+      <h2>Gestión de datos y entrenamiento IA (IAD) — 790 h</h2>
     </div>
-    <div class="modules-grid">
 
-      <a class="module-card" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/">
+    <!-- MP01 -->
+    <details open>
+      <summary>
         <span class="mp-badge">MP01</span>
-        <div class="module-info">
+        <div class="mp-info">
           <h3>Procesamiento de datos para IA</h3>
-          <div class="module-meta">
-            <span>200 h</span>
-            <span>Curso 1.º</span>
-            <span>ECP2492_3</span>
-          </div>
+          <div class="mp-meta"><span>200 h</span><span>Curso 1.º</span><span>ECP2492_3</span><span>6 UDs</span></div>
         </div>
-        <span class="arrow">›</span>
-      </a>
+        <span class="chevron">›</span>
+      </summary>
+      <div class="ud-list">
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD1_Extraccion-datos/">
+          <span class="ud-num">UD1</span><span class="ud-title">Extracción de datos desde las fuentes</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD1_Extraccion-datos/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD1_Extraccion-datos/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD2_Exploracion-analisis/">
+          <span class="ud-num">UD2</span><span class="ud-title">Exploración y análisis del conjunto de datos</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD2_Exploracion-analisis/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD2_Exploracion-analisis/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD3_Verificacion-calidad/">
+          <span class="ud-num">UD3</span><span class="ud-title">Verificación de la calidad de los datos</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD3_Verificacion-calidad/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD3_Verificacion-calidad/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD4_Preprocesamiento-particion/">
+          <span class="ud-num">UD4</span><span class="ud-title">Preprocesamiento y partición de datos</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD4_Preprocesamiento-particion/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD4_Preprocesamiento-particion/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD5_Gestion-versionado-normativa/">
+          <span class="ud-num">UD5</span><span class="ud-title">Gestión, versionado y cumplimiento normativo</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD5_Gestion-versionado-normativa/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD5_Gestion-versionado-normativa/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD6_Responsabilidad-sostenibilidad-PRL/">
+          <span class="ud-num">UD6</span><span class="ud-title">Trabajo responsable, sostenible y PRL</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD6_Responsabilidad-sostenibilidad-PRL/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/UD6_Responsabilidad-sostenibilidad-PRL/slides.pdf">PDF</a></span>
+        </a>
+      </div>
+    </details>
 
-      <a class="module-card" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/">
+    <!-- MP02 -->
+    <details>
+      <summary>
         <span class="mp-badge">MP02</span>
-        <div class="module-info">
+        <div class="mp-info">
           <h3>Entrenamiento de modelos de aprendizaje automático</h3>
-          <div class="module-meta">
-            <span>190 h</span>
-            <span>Curso 1.º</span>
-            <span>ECP2493_3</span>
-          </div>
+          <div class="mp-meta"><span>190 h</span><span>Curso 1.º</span><span>ECP2493_3</span><span>6 UDs</span></div>
         </div>
-        <span class="arrow">›</span>
-      </a>
+        <span class="chevron">›</span>
+      </summary>
+      <div class="ud-list">
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD1_Estrategia-entrenamiento/">
+          <span class="ud-num">UD1</span><span class="ud-title">Selección de la estrategia de entrenamiento</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD1_Estrategia-entrenamiento/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD1_Estrategia-entrenamiento/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD2_Configuracion-modelo-entorno/">
+          <span class="ud-num">UD2</span><span class="ud-title">Configuración del modelo y del entorno</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD2_Configuracion-modelo-entorno/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD2_Configuracion-modelo-entorno/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD3_Operativizacion-entrenamiento/">
+          <span class="ud-num">UD3</span><span class="ud-title">Operativización del entrenamiento</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD3_Operativizacion-entrenamiento/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD3_Operativizacion-entrenamiento/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD4_Evaluacion-modelo/">
+          <span class="ud-num">UD4</span><span class="ud-title">Evaluación del modelo entrenado</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD4_Evaluacion-modelo/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD4_Evaluacion-modelo/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD5_Versionado-ficha-tecnica/">
+          <span class="ud-num">UD5</span><span class="ud-title">Versionado y ficha técnica del modelo</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD5_Versionado-ficha-tecnica/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD5_Versionado-ficha-tecnica/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD6_Responsabilidad-sostenibilidad-PRL/">
+          <span class="ud-num">UD6</span><span class="ud-title">Trabajo responsable, sostenible y PRL</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD6_Responsabilidad-sostenibilidad-PRL/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/UD6_Responsabilidad-sostenibilidad-PRL/slides.pdf">PDF</a></span>
+        </a>
+      </div>
+    </details>
 
-      <a class="module-card" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/">
+    <!-- MP03 -->
+    <details>
+      <summary>
         <span class="mp-badge">MP03</span>
-        <div class="module-info">
+        <div class="mp-info">
           <h3>Desarrollo de componentes para sistemas de ML</h3>
-          <div class="module-meta">
-            <span>200 h</span>
-            <span>Curso 2.º</span>
-            <span>ECP2497_3</span>
-          </div>
+          <div class="mp-meta"><span>200 h</span><span>Curso 2.º</span><span>ECP2497_3</span><span>7 UDs</span></div>
         </div>
-        <span class="arrow">›</span>
-      </a>
+        <span class="chevron">›</span>
+      </summary>
+      <div class="ud-list">
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD1_Pipelines-datos-ML/">
+          <span class="ud-num">UD1</span><span class="ud-title">Pipelines de datos para ML</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD1_Pipelines-datos-ML/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD1_Pipelines-datos-ML/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD2_Despliegue-modelos-frameworks/">
+          <span class="ud-num">UD2</span><span class="ud-title">Despliegue de modelos con frameworks especializados</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD2_Despliegue-modelos-frameworks/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD2_Despliegue-modelos-frameworks/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD3_Integracion-modelos-aplicaciones/">
+          <span class="ud-num">UD3</span><span class="ud-title">Integración de modelos en aplicaciones</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD3_Integracion-modelos-aplicaciones/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD3_Integracion-modelos-aplicaciones/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD4_Validacion-calidad-componentes/">
+          <span class="ud-num">UD4</span><span class="ud-title">Validación de la calidad de los componentes</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD4_Validacion-calidad-componentes/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD4_Validacion-calidad-componentes/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD5_Protocolizacion-documentacion/">
+          <span class="ud-num">UD5</span><span class="ud-title">Protocolización y documentación técnica</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD5_Protocolizacion-documentacion/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD5_Protocolizacion-documentacion/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD6_Vigilancia-tecnologica/">
+          <span class="ud-num">UD6</span><span class="ud-title">Vigilancia tecnológica</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD6_Vigilancia-tecnologica/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD6_Vigilancia-tecnologica/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD7_Gestion-seguridad-sostenibilidad/">
+          <span class="ud-num">UD7</span><span class="ud-title">Gestión integral: seguridad, sostenibilidad y ética</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD7_Gestion-seguridad-sostenibilidad/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/UD7_Gestion-seguridad-sostenibilidad/slides.pdf">PDF</a></span>
+        </a>
+      </div>
+    </details>
 
-      <a class="module-card" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/">
+    <!-- MP04 -->
+    <details>
+      <summary>
         <span class="mp-badge">MP04</span>
-        <div class="module-info">
+        <div class="mp-info">
           <h3>Soluciones basadas en modelos de lenguaje (LLMs)</h3>
-          <div class="module-meta">
-            <span>160 h</span>
-            <span>Curso 2.º</span>
-            <span>CPE_5054_3</span>
-          </div>
+          <div class="mp-meta"><span>160 h</span><span>Curso 2.º</span><span>CPE_5054_3</span><span>8 UDs</span></div>
         </div>
-        <span class="arrow">›</span>
-      </a>
-
-    </div>
+        <span class="chevron">›</span>
+      </summary>
+      <div class="ud-list">
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD1_Analisis-caso-uso/">
+          <span class="ud-num">UD1</span><span class="ud-title">Análisis del caso de uso y selección del modelo</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD1_Analisis-caso-uso/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD1_Analisis-caso-uso/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD2_Componentes-interaccion/">
+          <span class="ud-num">UD2</span><span class="ud-title">Componentes de interacción con el modelo</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD2_Componentes-interaccion/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD2_Componentes-interaccion/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD3_Integracion-RAG/">
+          <span class="ud-num">UD3</span><span class="ud-title">Integración con fuentes, herramientas y sistemas (RAG)</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD3_Integracion-RAG/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD3_Integracion-RAG/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD4_Comportamientos-agenticos/">
+          <span class="ud-num">UD4</span><span class="ud-title">Comportamientos agénticos</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD4_Comportamientos-agenticos/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD4_Comportamientos-agenticos/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD5_Validacion-puesta-servicio/">
+          <span class="ud-num">UD5</span><span class="ud-title">Validación y puesta en servicio</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD5_Validacion-puesta-servicio/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD5_Validacion-puesta-servicio/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD6_Seguridad-privacidad-etica/">
+          <span class="ud-num">UD6</span><span class="ud-title">Seguridad, privacidad y uso ético</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD6_Seguridad-privacidad-etica/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD6_Seguridad-privacidad-etica/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD7_Vigilancia-tecnologica-LLMs/">
+          <span class="ud-num">UD7</span><span class="ud-title">Vigilancia tecnológica de LLMs</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD7_Vigilancia-tecnologica-LLMs/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD7_Vigilancia-tecnologica-LLMs/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD8_Responsabilidad-sostenibilidad-PRL/">
+          <span class="ud-num">UD8</span><span class="ud-title">Responsabilidad profesional, sostenibilidad y PRL</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD8_Responsabilidad-sostenibilidad-PRL/">Slides</a><a class="btn-pdf" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/UD8_Responsabilidad-sostenibilidad-PRL/slides.pdf">PDF</a></span>
+        </a>
+      </div>
+    </details>
   </div>
 
-  <!-- CFS 2 -->
+  <!-- ══════════════════ CFS 2 ══════════════════ -->
   <div class="cfs-block">
     <div class="cfs-header">
-      <span class="cfs-tag cfs2">CFS 2</span>
-      <h2>Instalación, despliegue y explotación de sistemas de IA</h2>
+      <span class="cfs-tag g">CFS 2</span>
+      <h2>Instalación, despliegue y explotación de sistemas de IA (IAD) — 730 h</h2>
     </div>
-    <div class="modules-grid">
 
-      <a class="module-card cfs2" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/">
+    <!-- MP01 -->
+    <details class="cfs2">
+      <summary>
         <span class="mp-badge">MP01</span>
-        <div class="module-info">
+        <div class="mp-info">
           <h3>Implementación de sistemas de IA</h3>
-          <div class="module-meta">
-            <span>190 h</span>
-            <span>Curso 1.º</span>
-            <span>ECP2494_3</span>
-          </div>
+          <div class="mp-meta"><span>190 h</span><span>Curso 1.º</span><span>ECP2494_3</span><span>6 UDs</span></div>
         </div>
-        <span class="arrow">›</span>
-      </a>
+        <span class="chevron">›</span>
+      </summary>
+      <div class="ud-list">
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD1_Componentes-fisicos-equipos/">
+          <span class="ud-num">UD1</span><span class="ud-title">Integración de componentes físicos y equipos</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD1_Componentes-fisicos-equipos/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD1_Componentes-fisicos-equipos/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD2_Administracion-componentes-aplicaciones/">
+          <span class="ud-num">UD2</span><span class="ud-title">Administración de componentes de aplicaciones</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD2_Administracion-componentes-aplicaciones/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD2_Administracion-componentes-aplicaciones/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD3_Implementacion-explotacion/">
+          <span class="ud-num">UD3</span><span class="ud-title">Implementación de componentes para su explotación</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD3_Implementacion-explotacion/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD3_Implementacion-explotacion/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD4_Actualizacion-componentes/">
+          <span class="ud-num">UD4</span><span class="ud-title">Actualización de componentes</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD4_Actualizacion-componentes/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD4_Actualizacion-componentes/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD5_Resolucion-incidencias/">
+          <span class="ud-num">UD5</span><span class="ud-title">Resolución de incidencias en plataformas de IA</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD5_Resolucion-incidencias/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD5_Resolucion-incidencias/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD6_PRL-gestion-residuos/">
+          <span class="ud-num">UD6</span><span class="ud-title">Prevención de riesgos y gestión de residuos</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD6_PRL-gestion-residuos/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/UD6_PRL-gestion-residuos/slides.pdf">PDF</a></span>
+        </a>
+      </div>
+    </details>
 
-      <a class="module-card cfs2" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/">
+    <!-- MP02 -->
+    <details class="cfs2">
+      <summary>
         <span class="mp-badge">MP02</span>
-        <div class="module-info">
+        <div class="mp-info">
           <h3>Despliegue de sistemas de IA</h3>
-          <div class="module-meta">
-            <span>200 h</span>
-            <span>Curso 1.º</span>
-            <span>ECP2495_3</span>
-          </div>
+          <div class="mp-meta"><span>200 h</span><span>Curso 1.º</span><span>ECP2495_3</span><span>8 UDs</span></div>
         </div>
-        <span class="arrow">›</span>
-      </a>
+        <span class="chevron">›</span>
+      </summary>
+      <div class="ud-list">
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD1_Preparacion-despliegue/">
+          <span class="ud-num">UD1</span><span class="ud-title">Preparación del despliegue</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD1_Preparacion-despliegue/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD1_Preparacion-despliegue/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD2_Despliegue-infraestructura/">
+          <span class="ud-num">UD2</span><span class="ud-title">Despliegue de la infraestructura</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD2_Despliegue-infraestructura/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD2_Despliegue-infraestructura/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD3_Instalacion-aplicaciones-despliegue/">
+          <span class="ud-num">UD3</span><span class="ud-title">Instalación de aplicaciones de despliegue</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD3_Instalacion-aplicaciones-despliegue/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD3_Instalacion-aplicaciones-despliegue/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD4_Integracion-flujo-productivo/">
+          <span class="ud-num">UD4</span><span class="ud-title">Integración en el flujo productivo</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD4_Integracion-flujo-productivo/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD4_Integracion-flujo-productivo/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD5_Puesta-en-servicio/">
+          <span class="ud-num">UD5</span><span class="ud-title">Puesta en servicio</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD5_Puesta-en-servicio/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD5_Puesta-en-servicio/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD6_Monitorizacion-mantenimiento/">
+          <span class="ud-num">UD6</span><span class="ud-title">Monitorización y mantenimiento</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD6_Monitorizacion-mantenimiento/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD6_Monitorizacion-mantenimiento/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD7_Gobernanza-trazabilidad-normativa/">
+          <span class="ud-num">UD7</span><span class="ud-title">Gobernanza, trazabilidad y cumplimiento normativo</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD7_Gobernanza-trazabilidad-normativa/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD7_Gobernanza-trazabilidad-normativa/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD8_Responsabilidad-sostenibilidad-PRL/">
+          <span class="ud-num">UD8</span><span class="ud-title">Responsabilidad, sostenibilidad, PRL y residuos</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD8_Responsabilidad-sostenibilidad-PRL/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/UD8_Responsabilidad-sostenibilidad-PRL/slides.pdf">PDF</a></span>
+        </a>
+      </div>
+    </details>
 
-      <a class="module-card cfs2" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/">
+    <!-- MP03 -->
+    <details class="cfs2">
+      <summary>
         <span class="mp-badge">MP03</span>
-        <div class="module-info">
+        <div class="mp-info">
           <h3>Explotación de servicios de datos y analítica</h3>
-          <div class="module-meta">
-            <span>180 h</span>
-            <span>Curso 2.º</span>
-            <span>ECP2496_3</span>
-          </div>
+          <div class="mp-meta"><span>180 h</span><span>Curso 2.º</span><span>ECP2496_3</span><span>7 UDs</span></div>
         </div>
-        <span class="arrow">›</span>
-      </a>
+        <span class="chevron">›</span>
+      </summary>
+      <div class="ud-list">
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD1_Plataforma-servicios-IA/">
+          <span class="ud-num">UD1</span><span class="ud-title">Implementación de la plataforma de servicios de IA</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD1_Plataforma-servicios-IA/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD1_Plataforma-servicios-IA/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD2_Valoracion-predictiva-estructurados/">
+          <span class="ud-num">UD2</span><span class="ud-title">Valoración predictiva de datos estructurados</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD2_Valoracion-predictiva-estructurados/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD2_Valoracion-predictiva-estructurados/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD3_Analisis-series-temporales/">
+          <span class="ud-num">UD3</span><span class="ud-title">Análisis de series temporales</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD3_Analisis-series-temporales/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD3_Analisis-series-temporales/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD4_Vision-artificial-imagen-video/">
+          <span class="ud-num">UD4</span><span class="ud-title">Visión artificial sobre imágenes y vídeo</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD4_Vision-artificial-imagen-video/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD4_Vision-artificial-imagen-video/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD5_PLN-procesamiento-voz/">
+          <span class="ud-num">UD5</span><span class="ud-title">Procesamiento de lenguaje natural y voz</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD5_PLN-procesamiento-voz/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD5_PLN-procesamiento-voz/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD6_Inteligencia-negocio-analitica/">
+          <span class="ud-num">UD6</span><span class="ud-title">Inteligencia de negocio y analítica avanzada</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD6_Inteligencia-negocio-analitica/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD6_Inteligencia-negocio-analitica/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD7_Gestion-seguridad-sostenibilidad/">
+          <span class="ud-num">UD7</span><span class="ud-title">Gestión integral: seguridad, sostenibilidad y desarrollo profesional</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD7_Gestion-seguridad-sostenibilidad/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/UD7_Gestion-seguridad-sostenibilidad/slides.pdf">PDF</a></span>
+        </a>
+      </div>
+    </details>
 
-      <a class="module-card cfs2" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/">
+    <!-- MP04 -->
+    <details class="cfs2">
+      <summary>
         <span class="mp-badge">MP04</span>
-        <div class="module-info">
+        <div class="mp-info">
           <h3>Infraestructura para la ejecución de LLMs</h3>
-          <div class="module-meta">
-            <span>160 h</span>
-            <span>Curso 2.º</span>
-            <span>CPE_5074_3</span>
-          </div>
+          <div class="mp-meta"><span>160 h</span><span>Curso 2.º</span><span>CPE_5074_3</span><span>7 UDs</span></div>
         </div>
-        <span class="arrow">›</span>
-      </a>
-
-    </div>
+        <span class="chevron">›</span>
+      </summary>
+      <div class="ud-list">
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD1_Analisis-requisitos-LLM/">
+          <span class="ud-num">UD1</span><span class="ud-title">Análisis de requisitos del sistema LLM</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD1_Analisis-requisitos-LLM/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD1_Analisis-requisitos-LLM/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD2_Dimensionamiento-recursos/">
+          <span class="ud-num">UD2</span><span class="ud-title">Selección y dimensionamiento de recursos</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD2_Dimensionamiento-recursos/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD2_Dimensionamiento-recursos/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD3_Preparacion-entorno-ejecucion/">
+          <span class="ud-num">UD3</span><span class="ud-title">Preparación del entorno de ejecución</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD3_Preparacion-entorno-ejecucion/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD3_Preparacion-entorno-ejecucion/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD4_Puesta-servicio-modelo/">
+          <span class="ud-num">UD4</span><span class="ud-title">Puesta en servicio del modelo</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD4_Puesta-servicio-modelo/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD4_Puesta-servicio-modelo/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD5_Validacion-capacidad-operativa/">
+          <span class="ud-num">UD5</span><span class="ud-title">Validación de la capacidad operativa</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD5_Validacion-capacidad-operativa/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD5_Validacion-capacidad-operativa/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD6_Seguridad-privacidad-trazabilidad/">
+          <span class="ud-num">UD6</span><span class="ud-title">Seguridad, privacidad y trazabilidad</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD6_Seguridad-privacidad-trazabilidad/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD6_Seguridad-privacidad-trazabilidad/slides.pdf">PDF</a></span>
+        </a>
+        <a class="ud-link" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD7_Responsabilidad-sostenibilidad-PRL/">
+          <span class="ud-num">UD7</span><span class="ud-title">Responsabilidad, sostenibilidad y PRL</span>
+          <span class="ud-actions"><a class="btn-slides" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD7_Responsabilidad-sostenibilidad-PRL/">Slides</a><a class="btn-pdf" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/UD7_Responsabilidad-sostenibilidad-PRL/slides.pdf">PDF</a></span>
+        </a>
+      </div>
+    </details>
   </div>
 
 </main>
 
-<div style="text-align:center;padding:16px 0 8px;font-size:0.85em;">
-  <a href="indice.html" style="color:#3b82f6;text-decoration:none;font-weight:600;">Ver índice completo de unidades didácticas →</a>
-</div>
-
 <footer>
-  Certificados de Formación Especializada · Inteligencia Artificial y Data · Nivel 3
+  CFS IAD · Inteligencia Artificial y Data · Nivel 3 &nbsp;|&nbsp;
+  <a href="indice.html">Índice completo</a>
 </footer>
 
 </body>

@@ -36,21 +36,17 @@ jobs:
           cp index.html _site/index.html
           touch _site/.nojekyll
 
-          modules=(
-            "CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos"
-            "CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos"
-            "CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML"
-            "CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM"
-            "CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA"
-            "CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA"
-            "CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos"
-            "CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM"
-          )
+          mapfile -t FILES < <(find . -name "index.md" \
+            -not -path "./.github/*" \
+            -not -path "./_site/*" \
+            -not -path "./node_modules/*" \
+            | sort)
 
-          for module in "${modules[@]}"; do
-            echo "Convirtiendo ${module}/index.md..."
-            mkdir -p "_site/${module}"
-            marp "${module}/index.md" --html --output "_site/${module}/index.html"
+          for f in "${FILES[@]}"; do
+            dir=$(dirname "${f#./}")
+            mkdir -p "_site/$dir"
+            echo "Converting $f ..."
+            marp "$f" --html --output "_site/$dir/index.html"
           done
 
       - name: Setup Pages

@@ -100,7 +100,7 @@ def build_html() -> str:
 <body>
 <header>
   <h1>ApuntesIAD — Índice de unidades didácticas</h1>
-  <p>Certificados de Formación Especializada en Inteligencia Artificial y Datos · Nivel 3</p>
+  <p>Inteligencia Artificial y Datos · Nivel 3</p>
 </header>
 <nav class="breadcrumb">
   <a href="./">Inicio</a> › Índice completo

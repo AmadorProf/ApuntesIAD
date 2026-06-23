@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CFS IAD — Inteligencia Artificial y Data</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+      color: #fff;
+      padding: 48px 32px 40px;
+      text-align: center;
+    }
+
+    header .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 20px;
+      font-size: 0.78em;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: 2em;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.05em;
+      opacity: 0.85;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+
+    .cfs-block {
+      margin-bottom: 48px;
+    }
+
+    .cfs-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid #e2e8f0;
+    }
+
+    .cfs-tag {
+      background: #1e3a5f;
+      color: #fff;
+      font-size: 0.72em;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 5px 12px;
+      border-radius: 6px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .cfs-tag.cfs2 {
+      background: #065f46;
+    }
+
+    .cfs-header h2 {
+      font-size: 1.15em;
+      font-weight: 600;
+      color: #1e293b;
+      line-height: 1.3;
+    }
+
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+      gap: 16px;
+    }
+
+    .module-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px 22px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      transition: box-shadow 0.18s, border-color 0.18s, transform 0.15s;
+    }
+
+    .module-card:hover {
+      box-shadow: 0 4px 20px rgba(37,99,235,0.12);
+      border-color: #93c5fd;
+      transform: translateY(-2px);
+    }
+
+    .module-card.cfs2:hover {
+      box-shadow: 0 4px 20px rgba(6,95,70,0.12);
+      border-color: #6ee7b7;
+    }
+
+    .mp-badge {
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-size: 0.75em;
+      font-weight: 700;
+      padding: 6px 10px;
+      border-radius: 6px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      letter-spacing: 0.04em;
+    }
+
+    .module-card.cfs2 .mp-badge {
+      background: #ecfdf5;
+      color: #065f46;
+    }
+
+    .module-info h3 {
+      font-size: 0.97em;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #1e293b;
+    }
+
+    .module-meta {
+      font-size: 0.78em;
+      color: #64748b;
+      display: flex;
+      gap: 10px;
+    }
+
+    .module-meta span::before {
+      content: '·';
+      margin-right: 10px;
+    }
+
+    .module-meta span:first-child::before {
+      content: '';
+      margin-right: 0;
+    }
+
+    .arrow {
+      margin-left: auto;
+      color: #cbd5e1;
+      font-size: 1.1em;
+      align-self: center;
+      flex-shrink: 0;
+      transition: color 0.15s;
+    }
+
+    .module-card:hover .arrow {
+      color: #2563eb;
+    }
+
+    .module-card.cfs2:hover .arrow {
+      color: #059669;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.78em;
+      color: #94a3b8;
+      padding: 24px;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Familia Profesional · Inteligencia Artificial y Data</div>
+  <h1>Certificados de Formación Especializada</h1>
+  <p>Inteligencia Artificial y Data (IAD) — Nivel 3</p>
+</header>
+
+<main>
+
+  <!-- CFS 1 -->
+  <div class="cfs-block">
+    <div class="cfs-header">
+      <span class="cfs-tag">CFS 1</span>
+      <h2>Gestión de datos y entrenamiento IA</h2>
+    </div>
+    <div class="modules-grid">
+
+      <a class="module-card" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP01_Procesamiento-Datos/">
+        <span class="mp-badge">MP01</span>
+        <div class="module-info">
+          <h3>Procesamiento de datos para IA</h3>
+          <div class="module-meta">
+            <span>200 h</span>
+            <span>Curso 1.º</span>
+            <span>ECP2492_3</span>
+          </div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="module-card" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP02_Entrenamiento-Modelos/">
+        <span class="mp-badge">MP02</span>
+        <div class="module-info">
+          <h3>Entrenamiento de modelos de aprendizaje automático</h3>
+          <div class="module-meta">
+            <span>190 h</span>
+            <span>Curso 1.º</span>
+            <span>ECP2493_3</span>
+          </div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="module-card" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP03_Desarrollo-Componentes-ML/">
+        <span class="mp-badge">MP03</span>
+        <div class="module-info">
+          <h3>Desarrollo de componentes para sistemas de ML</h3>
+          <div class="module-meta">
+            <span>200 h</span>
+            <span>Curso 2.º</span>
+            <span>ECP2497_3</span>
+          </div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="module-card" href="CFS1_Gestion-de-datos-y-entrenamiento-IA/MP04_Soluciones-LLM/">
+        <span class="mp-badge">MP04</span>
+        <div class="module-info">
+          <h3>Soluciones basadas en modelos de lenguaje (LLMs)</h3>
+          <div class="module-meta">
+            <span>160 h</span>
+            <span>Curso 2.º</span>
+            <span>CPE_5054_3</span>
+          </div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- CFS 2 -->
+  <div class="cfs-block">
+    <div class="cfs-header">
+      <span class="cfs-tag cfs2">CFS 2</span>
+      <h2>Instalación, despliegue y explotación de sistemas de IA</h2>
+    </div>
+    <div class="modules-grid">
+
+      <a class="module-card cfs2" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP01_Implementacion-Sistemas-IA/">
+        <span class="mp-badge">MP01</span>
+        <div class="module-info">
+          <h3>Implementación de sistemas de IA</h3>
+          <div class="module-meta">
+            <span>190 h</span>
+            <span>Curso 1.º</span>
+            <span>ECP2494_3</span>
+          </div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="module-card cfs2" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP02_Despliegue-Sistemas-IA/">
+        <span class="mp-badge">MP02</span>
+        <div class="module-info">
+          <h3>Despliegue de sistemas de IA</h3>
+          <div class="module-meta">
+            <span>200 h</span>
+            <span>Curso 1.º</span>
+            <span>ECP2495_3</span>
+          </div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="module-card cfs2" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP03_Explotacion-Servicios-Datos/">
+        <span class="mp-badge">MP03</span>
+        <div class="module-info">
+          <h3>Explotación de servicios de datos y analítica</h3>
+          <div class="module-meta">
+            <span>180 h</span>
+            <span>Curso 2.º</span>
+            <span>ECP2496_3</span>
+          </div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="module-card cfs2" href="CFS2_Instalacion-despliegue-y-explotacion-de-sistemas-de-IA/MP04_Infraestructura-LLM/">
+        <span class="mp-badge">MP04</span>
+        <div class="module-info">
+          <h3>Infraestructura para la ejecución de LLMs</h3>
+          <div class="module-meta">
+            <span>160 h</span>
+            <span>Curso 2.º</span>
+            <span>CPE_5074_3</span>
+          </div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  Certificados de Formación Especializada · Inteligencia Artificial y Data · Nivel 3
+</footer>
+
+</body>
+</html>

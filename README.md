@@ -1,4 +1,4 @@
-# Apuntes de IA y Datos
+# Apuntes de IA y Datos — 55 UDs · 8 módulos
 
 Apuntes organizados en **55 unidades didácticas** distribuidas en 8 módulos.
 

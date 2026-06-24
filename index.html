@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Apuntes IAD</title>
+  <title>Apuntes de IA y Datos</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -20,19 +20,8 @@
       padding: 40px 32px 36px;
       text-align: center;
     }
-    header .badge {
-      display: inline-block;
-      background: rgba(255,255,255,0.18);
-      border: 1px solid rgba(255,255,255,0.3);
-      border-radius: 20px;
-      font-size: 0.72em;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 4px 14px;
-      margin-bottom: 14px;
-    }
-    header h1 { font-size: 2em; font-weight: 700; line-height: 1.2; margin-bottom: 6px; }
-    header p  { font-size: 0.95em; opacity: 0.82; }
+    header h1 { font-size: 2em; font-weight: 700; line-height: 1.2; margin-bottom: 8px; }
+    header p  { font-size: 0.85em; opacity: 0.65; margin-top: 4px; }
 
     /* ── DIAGRAMA DE FLUJO ── */
     .diagram-section {
@@ -69,10 +58,7 @@
       position: relative;
     }
     .flow-node.start { background: #1e3a5f; color: white; border-color: #1e3a5f; }
-    .flow-node.cfs1  { background: #eff6ff; border-color: #3b82f6; color: #1d4ed8; }
-    .flow-node.cfs2  { background: #ecfdf5; border-color: #10b981; color: #065f46; }
     .flow-node.ud    { background: #fefce8; border-color: #f59e0b; color: #92400e; }
-    .flow-node.pdf   { background: #fdf4ff; border-color: #a855f7; color: #6b21a8; }
     .flow-node .sub  { font-size: 0.8em; font-weight: 400; color: inherit; opacity: 0.75; margin-top: 2px; }
     .flow-arrow {
       font-size: 1.3em;
@@ -80,18 +66,11 @@
       padding: 0 6px;
       font-weight: 300;
     }
-    .flow-group {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      align-items: flex-start;
-    }
     .flow-group-inner {
       display: flex;
       flex-direction: column;
       gap: 6px;
     }
-    .flow-row { display: flex; align-items: center; gap: 0; }
     .flow-legend {
       display: flex;
       gap: 20px;
@@ -121,17 +100,6 @@
       padding-bottom: 12px;
       border-bottom: 2px solid #e2e8f0;
     }
-    .cfs-tag {
-      background: #1e3a5f;
-      color: #fff;
-      font-size: 0.72em;
-      font-weight: 700;
-      padding: 5px 12px;
-      border-radius: 6px;
-      white-space: nowrap;
-      letter-spacing: 0.05em;
-    }
-    .cfs-tag.g { background: #065f46; }
     .cfs-header h2 { font-size: 1.05em; font-weight: 600; color: #1e293b; }
 
     /* ── MODULE ACCORDION ── */
@@ -229,7 +197,6 @@
       border: 1px solid;
     }
     .btn-slides { color: #2563eb; border-color: #bfdbfe; background: #eff6ff; }
-    .btn-pdf    { color: #7c3aed; border-color: #ddd6fe; background: #faf5ff; }
     details.cfs2 .btn-slides { color: #059669; border-color: #a7f3d0; background: #ecfdf5; }
 
     /* ── FOOTER ── */
@@ -296,12 +263,52 @@
     /* ── FILTRO ── */
     .ud-link.hidden { display: none; }
     details.mod-hidden { display: none; }
+
+    /* ── TOOLBAR ── */
+    .toolbar {
+      max-width: 1060px;
+      margin: 16px auto 0;
+      padding: 0 20px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .tool-btn {
+      font-size: 0.76em;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 6px;
+      border: 1px solid #e2e8f0;
+      background: white;
+      color: #475569;
+      cursor: pointer;
+      transition: background 0.12s, border-color 0.12s;
+    }
+    .tool-btn:hover { background: #f1f5f9; border-color: #cbd5e1; }
+    .tool-btn.danger { color: #dc2626; border-color: #fecaca; background: #fff5f5; }
+    .tool-btn.danger:hover { background: #fef2f2; }
+    .tool-sep { flex: 1; }
+
+    /* ── CONTADOR POR MÓDULO ── */
+    .mod-count {
+      font-size: 0.7em;
+      font-weight: 600;
+      color: #94a3b8;
+      background: #f1f5f9;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+    .mod-count.complete { color: #059669; background: #d1fae5; }
   </style>
 </head>
 <body>
 
 <header>
   <h1>Apuntes de IA y Datos</h1>
+  <p>55 unidades didácticas &nbsp;·&nbsp; 8 módulos &nbsp;·&nbsp; 1 520 h</p>
 </header>
 
 <!-- DIAGRAMA DE FLUJO -->
@@ -346,6 +353,13 @@
     <span id="progress-pct">0%</span>
   </div>
   <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+</div>
+
+<div class="toolbar">
+  <button class="tool-btn" id="btn-expand">Expandir todo</button>
+  <button class="tool-btn" id="btn-collapse">Colapsar todo</button>
+  <span class="tool-sep"></span>
+  <button class="tool-btn danger" id="btn-reset">Reiniciar progreso</button>
 </div>
 
 <main>
@@ -706,14 +720,40 @@
 (function () {
   var TOTAL = 55;
 
+  // Abrir temario en pestaña nueva
+  document.querySelectorAll('.btn-temario').forEach(function (a) {
+    a.target = '_blank';
+    a.rel    = 'noopener';
+  });
+
+  // Inyectar contador por módulo en cada summary
+  document.querySelectorAll('details').forEach(function (det) {
+    var uds = det.querySelectorAll('.ud-link').length;
+    var span = document.createElement('span');
+    span.className = 'mod-count';
+    span.dataset.total = uds;
+    det.querySelector('summary').insertBefore(span, det.querySelector('.chevron'));
+  });
+
+  function updateModCount(det) {
+    var span  = det.querySelector('.mod-count');
+    if (!span) return;
+    var total = parseInt(span.dataset.total, 10);
+    var done  = det.querySelectorAll('.ud-check:checked').length;
+    span.textContent = done + '/' + total;
+    span.classList.toggle('complete', done === total);
+  }
+
   function updateProgress() {
     var done = document.querySelectorAll('.ud-check:checked').length;
     var pct  = Math.round(done / TOTAL * 100);
     document.getElementById('progress-fill').style.width = pct + '%';
     document.getElementById('progress-done').textContent = done + ' / ' + TOTAL + ' UDs vistas';
     document.getElementById('progress-pct').textContent  = pct + '%';
+    document.querySelectorAll('details').forEach(updateModCount);
   }
 
+  // Inyectar checkboxes
   document.querySelectorAll('.ud-link').forEach(function (link) {
     var href = link.getAttribute('href');
     var sk   = 'ud:' + href;
@@ -734,6 +774,7 @@
 
   updateProgress();
 
+  // Buscador
   document.getElementById('buscador').addEventListener('input', function () {
     var q = this.value.toLowerCase().trim();
     document.querySelectorAll('.ud-link').forEach(function (link) {
@@ -751,6 +792,23 @@
     if (q === '') {
       document.querySelectorAll('details').forEach(function (det, i) { det.open = (i === 0); });
     }
+  });
+
+  // Toolbar
+  document.getElementById('btn-expand').addEventListener('click', function () {
+    document.querySelectorAll('details').forEach(function (d) { d.open = true; });
+  });
+  document.getElementById('btn-collapse').addEventListener('click', function () {
+    document.querySelectorAll('details').forEach(function (d) { d.open = false; });
+  });
+  document.getElementById('btn-reset').addEventListener('click', function () {
+    if (!confirm('¿Reiniciar todo el progreso? Se perderán los datos guardados.')) return;
+    document.querySelectorAll('.ud-check').forEach(function (cb) {
+      cb.checked = false;
+      localStorage.removeItem('ud:' + cb.closest('.ud-link').getAttribute('href'));
+      cb.closest('.ud-link').classList.remove('done');
+    });
+    updateProgress();
   });
 })();
 </script>

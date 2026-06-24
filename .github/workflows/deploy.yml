@@ -35,6 +35,7 @@ jobs:
           mkdir -p _site
           cp index.html _site/index.html
           cp indice.html _site/indice.html
+          cp viewer.html _site/viewer.html
           touch _site/.nojekyll
 
           mapfile -t FILES < <(find . -name "index.md" \
@@ -48,7 +49,17 @@ jobs:
             mkdir -p "_site/$dir"
             echo "Converting $f ..."
             marp "$f" --html --output "_site/$dir/index.html"
-            marp "$f" --pdf --allow-local-files --output "_site/$dir/slides.pdf"
+          done
+
+          mapfile -t TEMARIOS < <(find . -name "temario.md" \
+            -not -path "./.github/*" \
+            -not -path "./_site/*" \
+            | sort)
+
+          for t in "${TEMARIOS[@]}"; do
+            dir=$(dirname "${t#./}")
+            mkdir -p "_site/$dir"
+            cp "$t" "_site/$dir/temario.md"
           done
 
       - name: Setup Pages

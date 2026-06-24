@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temario — Apuntes de IA y Datos</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+      color: #fff;
+      padding: 18px 28px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    header a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-size: 0.85em;
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 5px 14px;
+      border-radius: 6px;
+      white-space: nowrap;
+      transition: background 0.15s;
+    }
+    header a:hover { background: rgba(255,255,255,0.15); }
+
+    header h1 {
+      font-size: 1em;
+      font-weight: 600;
+      opacity: 0.92;
+    }
+
+    #content {
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 20px 80px;
+    }
+
+    #loading {
+      text-align: center;
+      padding: 60px;
+      color: #64748b;
+      font-size: 0.9em;
+    }
+
+    #error {
+      background: #fef2f2;
+      border: 1px solid #fca5a5;
+      border-radius: 10px;
+      padding: 24px;
+      color: #991b1b;
+      display: none;
+    }
+
+    /* ── MARKDOWN STYLES ── */
+    .md h1 {
+      font-size: 1.7em;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 8px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #e2e8f0;
+    }
+    .md h2 {
+      font-size: 1.2em;
+      font-weight: 700;
+      color: #1e3a5f;
+      margin: 36px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .md h3 {
+      font-size: 1em;
+      font-weight: 700;
+      color: #334155;
+      margin: 24px 0 8px;
+    }
+    .md h4 {
+      font-size: 0.92em;
+      font-weight: 700;
+      color: #475569;
+      margin: 18px 0 6px;
+    }
+    .md p { line-height: 1.75; margin-bottom: 14px; font-size: 0.95em; }
+    .md ul, .md ol { margin: 10px 0 14px 22px; }
+    .md li { line-height: 1.7; margin-bottom: 4px; font-size: 0.95em; }
+    .md strong { color: #1e293b; }
+    .md em { color: #475569; }
+    .md hr { border: none; border-top: 1px solid #e2e8f0; margin: 28px 0; }
+    .md blockquote {
+      border-left: 3px solid #3b82f6;
+      padding: 10px 16px;
+      margin: 16px 0;
+      background: #f0f9ff;
+      color: #475569;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.92em;
+    }
+    .md code {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 0.85em;
+      font-family: 'Fira Code', 'Courier New', monospace;
+      color: #1d4ed8;
+    }
+    .md pre {
+      background: #0f172a;
+      border-radius: 8px;
+      padding: 18px 20px;
+      overflow-x: auto;
+      margin: 16px 0;
+    }
+    .md pre code {
+      background: none;
+      border: none;
+      padding: 0;
+      color: #e2e8f0;
+      font-size: 0.85em;
+      line-height: 1.6;
+    }
+    .md table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.88em;
+    }
+    .md th {
+      background: #1e3a5f;
+      color: white;
+      padding: 9px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+    .md td {
+      padding: 8px 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .md tr:nth-child(even) td { background: #f8fafc; }
+    .md tr:hover td { background: #f0f9ff; }
+
+    .md-card {
+      background: white;
+      border-radius: 12px;
+      padding: 40px 48px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html">← Volver</a>
+  <h1 id="header-title">Apuntes de IA y Datos</h1>
+</header>
+
+<div id="content">
+  <div id="loading">Cargando temario...</div>
+  <div id="error">No se pudo cargar el temario. Comprueba que el archivo existe.</div>
+  <div id="output" class="md-card md" style="display:none;"></div>
+</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const file = params.get('file');
+
+  if (!file) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').style.display = 'block';
+    document.getElementById('error').textContent = 'No se especificó ningún archivo (?file=...).';
+  } else {
+    fetch(file)
+      .then(r => {
+        if (!r.ok) throw new Error('No encontrado');
+        return r.text();
+      })
+      .then(md => {
+        const firstLine = md.split('\n')[0].replace(/^#+\s*/, '').trim();
+        document.title = firstLine + ' — Apuntes de IA y Datos';
+        document.getElementById('header-title').textContent = firstLine;
+        document.getElementById('output').innerHTML = marked.parse(md);
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('output').style.display = 'block';
+      })
+      .catch(() => {
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('error').style.display = 'block';
+      });
+  }
+</script>
+
+</body>
+</html>

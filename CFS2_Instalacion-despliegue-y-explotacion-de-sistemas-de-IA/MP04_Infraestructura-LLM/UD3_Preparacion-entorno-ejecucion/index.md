@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'UD3 · Preparación del entorno de ejecución | MP04 · Infraestructura para la ejecución de LLMs'
-footer: 'CFS Instalación, despliegue y explotación de sistemas de IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>

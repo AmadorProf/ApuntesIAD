@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'UD8 · Responsabilidad, sostenibilidad, PRL y residuos | MP02 · Despliegue de sistemas de IA'
-footer: 'CFS Instalación, despliegue y explotación de sistemas de IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <!-- _class: lead -->
@@ -398,7 +398,7 @@ El técnico de despliegue debe conocer y cumplir el Plan de emergencias del cent
 ## Fin de la UD8
 
 **MP02 · Despliegue de sistemas de IA**
-CFS — Instalación, despliegue y explotación de sistemas de IA (IAD)
+Apuntes de IA y Datos
 
 [← Volver al módulo](../)
 

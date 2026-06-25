@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'UD3 · Instalación de aplicaciones de despliegue | MP02 · Despliegue de sistemas de IA'
-footer: 'CFS Instalación, despliegue y explotación de sistemas de IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>

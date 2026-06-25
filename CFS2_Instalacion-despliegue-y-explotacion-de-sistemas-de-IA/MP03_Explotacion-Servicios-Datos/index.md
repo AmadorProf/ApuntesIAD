@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'MP03 · Explotación de servicios de datos y analítica'
-footer: 'CFS Instalación, despliegue y explotación de sistemas de IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>
@@ -26,7 +26,7 @@ pre { background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; fo
 
 # MP03 · Explotación de servicios de datos y analítica
 
-CFS — Instalación, despliegue y explotación de sistemas de IA (IAD)
+Apuntes de IA y Datos
 
 ---
 
@@ -35,7 +35,7 @@ CFS — Instalación, despliegue y explotación de sistemas de IA (IAD)
 | Campo | Valor |
 |---|---|
 | Código | **MP03** |
-| Estándar de competencia | ECP2496_3 · Nivel 3 |
+| Estándar de competencia | ECP2496_3 |
 | Familia profesional | Inteligencia Artificial y Data |
 | Duración | **180 h** |
 | Curso | **2.º** |

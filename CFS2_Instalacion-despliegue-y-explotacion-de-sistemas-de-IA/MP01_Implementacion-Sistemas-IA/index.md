@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'MP01 · Implementación de sistemas de IA'
-footer: 'CFS Instalación, despliegue y explotación de sistemas de IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>
@@ -26,7 +26,7 @@ pre { background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; fo
 
 # MP01 · Implementación de sistemas de IA
 
-CFS — Instalación, despliegue y explotación de sistemas de IA (IAD)
+Apuntes de IA y Datos
 
 ---
 
@@ -35,7 +35,7 @@ CFS — Instalación, despliegue y explotación de sistemas de IA (IAD)
 | Campo | Valor |
 |---|---|
 | Código | **MP01** |
-| Estándar de competencia | ECP2494_3 · Nivel 3 |
+| Estándar de competencia | ECP2494_3 |
 | Familia profesional | Inteligencia Artificial y Data |
 | Duración | **190 h** |
 | Curso | **1.º** |

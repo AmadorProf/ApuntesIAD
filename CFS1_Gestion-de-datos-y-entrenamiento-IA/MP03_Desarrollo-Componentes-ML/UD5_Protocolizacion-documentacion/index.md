@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'UD5 · Protocolización y documentación técnica | MP03 · Desarrollo de componentes para sistemas de ML'
-footer: 'CFS Gestión de datos y entrenamiento IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>
@@ -28,7 +28,7 @@ pre { background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; fo
 
 **MP03 · Desarrollo de componentes para sistemas de ML**
 
-CFS — Gestión de datos y entrenamiento IA (IAD)
+Apuntes de IA y Datos
 
 ---
 
@@ -166,7 +166,7 @@ description = "Componente de clasificación de texto tóxico para plataformas ed
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Equipo IA CFS", email = "ia@ejemplo.es" }]
+authors = [{ name = "Equipo IA", email = "ia@ejemplo.es" }]
 
 dependencies = [
     "scikit-learn>=1.4,<2.0",
@@ -239,7 +239,7 @@ Las **model cards** son el estándar de documentación para modelos de ML public
 # Model Card: Clasificador de Texto Tóxico v1.2.0
 
 ## Identificación
-- **Responsable:** Equipo IA — CFS IAD 2026  |  **Fecha:** 2026-06-23
+- **Responsable:** Equipo IA — IAD 2026  |  **Fecha:** 2026-06-23
 - **Versión:** 1.2.0  |  **Git commit:** a7f3d91  |  **Dataset hash:** sha256:3b4e...
 
 ## Descripción

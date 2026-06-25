@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'UD2 · Exploración y análisis del conjunto de datos | MP01 · Procesamiento de datos para IA'
-footer: 'CFS Gestión de datos y entrenamiento IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>
@@ -27,7 +27,7 @@ pre { background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; fo
 # UD2 · Exploración y análisis del conjunto de datos
 
 **MP01 · Procesamiento de datos para IA**
-CFS — Gestión de datos y entrenamiento IA (IAD)
+Apuntes de IA y Datos
 
 ---
 

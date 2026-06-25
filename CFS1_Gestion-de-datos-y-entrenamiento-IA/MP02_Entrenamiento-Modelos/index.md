@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'MP02 · Entrenamiento de modelos de aprendizaje automático'
-footer: 'CFS Gestión de datos y entrenamiento IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>
@@ -25,7 +25,7 @@ code { background: #f1f5f9; padding: 2px 6px; border-radius: 3px; font-size: 0.8
 
 # MP02 · Entrenamiento de modelos de aprendizaje automático
 
-CFS — Gestión de datos y entrenamiento IA (IAD)
+Apuntes de IA y Datos
 
 ---
 
@@ -34,7 +34,7 @@ CFS — Gestión de datos y entrenamiento IA (IAD)
 | Campo | Valor |
 |---|---|
 | Código | **MP02** |
-| Estándar de competencia | ECP2493_3 · Nivel 3 |
+| Estándar de competencia | ECP2493_3 |
 | Familia profesional | Inteligencia Artificial y Data |
 | Duración | **190 h** |
 | Curso | **1.º** |
@@ -335,6 +335,6 @@ study.optimize(objective, n_trials=100)
 
 # MP02 · Entrenamiento de modelos de aprendizaje automático
 
-**190 h · Curso 1.º · ECP2493_3 · Nivel 3**
+**190 h · Curso 1.º · ECP2493_3**
 
-*CFS — Gestión de datos y entrenamiento IA (IAD)*
+*Apuntes de IA y Datos*

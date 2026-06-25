@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'UD2 · Despliegue de modelos con frameworks especializados | MP03'
-footer: 'CFS Gestión de datos y entrenamiento IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>
@@ -27,7 +27,7 @@ pre { background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; fo
 # UD2 · Despliegue de modelos con frameworks especializados
 
 **MP03 · Desarrollo de componentes para sistemas de ML**
-CFS — Gestión de datos y entrenamiento IA (IAD)
+Apuntes de IA y Datos
 
 ---
 

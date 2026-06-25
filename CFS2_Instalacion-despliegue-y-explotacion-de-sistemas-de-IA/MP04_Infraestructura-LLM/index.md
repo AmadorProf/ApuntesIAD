@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'MP04 · Infraestructura para la ejecución de LLMs'
-footer: 'CFS Instalación, despliegue y explotación de sistemas de IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>
@@ -26,7 +26,7 @@ pre { background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; fo
 
 # MP04 · Infraestructura para la ejecución de LLMs
 
-CFS — Instalación, despliegue y explotación de sistemas de IA (IAD)
+Apuntes de IA y Datos
 
 ---
 
@@ -35,7 +35,7 @@ CFS — Instalación, despliegue y explotación de sistemas de IA (IAD)
 | Campo | Valor |
 |---|---|
 | Código | **MP04** |
-| Estándar de competencia | CPE_5074_3 · Nivel 3 |
+| Estándar de competencia | CPE_5074_3 |
 | Familia profesional | Inteligencia Artificial y Data |
 | Duración | **160 h** |
 | Curso | **2.º** |

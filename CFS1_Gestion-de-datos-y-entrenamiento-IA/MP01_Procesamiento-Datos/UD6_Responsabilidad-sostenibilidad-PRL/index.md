@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'UD6 · Trabajo responsable, sostenible y prevención de riesgos | MP01 · Procesamiento de datos para IA'
-footer: 'CFS Gestión de datos y entrenamiento IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>
@@ -28,7 +28,7 @@ pre { background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; fo
 
 **MP01 · Procesamiento de datos para IA**
 
-CFS — Gestión de datos y entrenamiento IA (IAD)
+Apuntes de IA y Datos
 
 ---
 

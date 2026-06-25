@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'UD4 · Evaluación del modelo entrenado | MP02 · Entrenamiento de modelos de aprendizaje automático'
-footer: 'CFS Gestión de datos y entrenamiento IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>
@@ -28,7 +28,7 @@ pre { background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; fo
 
 **MP02 · Entrenamiento de modelos de aprendizaje automático**
 
-CFS — Gestión de datos y entrenamiento IA (IAD)
+Apuntes de IA y Datos
 
 ---
 

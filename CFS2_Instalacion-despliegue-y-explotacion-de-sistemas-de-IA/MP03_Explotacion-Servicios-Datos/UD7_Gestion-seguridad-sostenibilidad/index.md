@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'UD7 · Gestión integral: seguridad, sostenibilidad y desarrollo profesional | MP03 · Explotación de servicios de datos y analítica'
-footer: 'CFS Instalación, despliegue y explotación de sistemas de IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>
@@ -27,7 +27,7 @@ pre { background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; fo
 # UD7 · Gestión integral: seguridad, sostenibilidad y desarrollo profesional
 
 **MP03 — Explotación de servicios de datos y analítica**
-CFS Instalación, despliegue y explotación de sistemas de IA (IAD)
+Apuntes de IA y Datos
 
 ---
 

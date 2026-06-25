@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'MP02 · Despliegue de sistemas de IA'
-footer: 'CFS Instalación, despliegue y explotación de sistemas de IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>
@@ -25,7 +25,7 @@ code { background: #f0fdf4; padding: 2px 6px; border-radius: 3px; font-size: 0.8
 
 # MP02 · Despliegue de sistemas de IA
 
-CFS — Instalación, despliegue y explotación de sistemas de IA (IAD)
+Apuntes de IA y Datos
 
 ---
 
@@ -34,7 +34,7 @@ CFS — Instalación, despliegue y explotación de sistemas de IA (IAD)
 | Campo | Valor |
 |---|---|
 | Código | **MP02** |
-| Estándar de competencia | ECP2495_3 · Nivel 3 |
+| Estándar de competencia | ECP2495_3 |
 | Familia profesional | Inteligencia Artificial y Data |
 | Duración | **200 h** |
 | Curso | **1.º** |
@@ -394,6 +394,6 @@ storage:
 
 # MP02 · Despliegue de sistemas de IA
 
-**200 h · Curso 1.º · ECP2495_3 · Nivel 3**
+**200 h · Curso 1.º · ECP2495_3**
 
-*CFS — Instalación, despliegue y explotación de sistemas de IA (IAD)*
+*Apuntes de IA y Datos*

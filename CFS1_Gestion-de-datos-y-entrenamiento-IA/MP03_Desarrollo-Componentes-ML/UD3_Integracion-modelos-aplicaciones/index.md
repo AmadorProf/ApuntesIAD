@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'UD3 · Integración de modelos en aplicaciones | MP03'
-footer: 'CFS Gestión de datos y entrenamiento IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>
@@ -27,7 +27,7 @@ pre { background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; fo
 # UD3 · Integración de modelos en aplicaciones
 
 **MP03 · Desarrollo de componentes para sistemas de ML**
-CFS — Gestión de datos y entrenamiento IA (IAD)
+Apuntes de IA y Datos
 
 ---
 

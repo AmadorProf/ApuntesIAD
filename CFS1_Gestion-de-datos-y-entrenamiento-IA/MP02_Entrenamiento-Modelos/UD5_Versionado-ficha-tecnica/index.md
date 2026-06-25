@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 header: 'UD5 · Versionado y ficha técnica del modelo | MP02 · Entrenamiento de modelos de aprendizaje automático'
-footer: 'CFS Gestión de datos y entrenamiento IA (IAD)'
+footer: 'Apuntes de IA y Datos'
 ---
 
 <style>
@@ -28,7 +28,7 @@ pre { background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; fo
 
 **MP02 · Entrenamiento de modelos de aprendizaje automático**
 
-CFS — Gestión de datos y entrenamiento IA (IAD)
+Apuntes de IA y Datos
 
 ---
 
@@ -283,7 +283,7 @@ Las **fichas técnicas de modelos** (*Model Cards*) fueron propuestas por Google
 # Ficha técnica: Clasificador de Texto Tóxico v1.0.0
 
 ## Identificación
-- Responsable: Equipo IA — CFS IAD 2026
+- Responsable: Equipo IA — IAD 2026
 - Fecha: 2026-06-23 | Versión: 1.0.0
 
 ## Descripción

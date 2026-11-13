@@ -38,6 +38,11 @@ jobs:
           cp viewer.html _site/viewer.html
           touch _site/.nojekyll
 
+          mkdir -p "_site/IA - Datos y Modelos"
+          cp -r "IA - Datos y Modelos/." "_site/IA - Datos y Modelos/"
+          mkdir -p "_site/IA - Infraestructura y Despliegue"
+          cp -r "IA - Infraestructura y Despliegue/." "_site/IA - Infraestructura y Despliegue/"
+
           mapfile -t FILES < <(find . -name "index.md" \
             -not -path "./.github/*" \
             -not -path "./_site/*" \

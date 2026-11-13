@@ -27,6 +27,13 @@ Accede a la [página web](https://amadorprof.github.io/ApuntesIAD/) para navegar
 - Marcar las UDs como vistas para llevar tu propio progreso (se guarda en el navegador).
 - Usar el **buscador** para filtrar por nombre de unidad.
 
+## Apuntes en prosa (sin diapositivas)
+
+Los mismos contenidos, organizados y numerados como en el cuaderno de notas original (sin slides, solo texto):
+
+- [IA - Datos y Modelos](https://amadorprof.github.io/ApuntesIAD/viewer.html?file=IA%20-%20Datos%20y%20Modelos/00-indice.md)
+- [IA - Infraestructura y Despliegue](https://amadorprof.github.io/ApuntesIAD/viewer.html?file=IA%20-%20Infraestructura%20y%20Despliegue/00-indice.md)
+
 ## Tecnología
 
 Slides generados con [Marp](https://marp.app/). Desplegado automáticamente en GitHub Pages mediante GitHub Actions en cada push a `main`.

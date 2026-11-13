@@ -87,6 +87,7 @@ La separación en capas tiene implicaciones prácticas importantes:
 dbt convierte las transformaciones SQL en un **DAG de modelos**: cada modelo es un fichero SQL que define una tabla o vista en el warehouse, y las dependencias entre modelos se declaran mediante la función `ref()`. dbt resuelve el orden de ejecución, materializa los resultados y gestiona las dependencias automáticamente.
 
 ```sql
+{% raw %}
 -- models/silver/clientes_limpio.sql
 -- Modelo silver: limpieza y estandarización de datos de clientes
 {{ config(
@@ -117,6 +118,7 @@ limpio AS (
 )
 
 SELECT * FROM limpio
+{% endraw %}
 ```
 
 ### 4.2 Tests de calidad en dbt
@@ -178,6 +180,7 @@ Las componentes de infraestructura de Airflow son:
 - **Metadata Database**: PostgreSQL o MySQL que almacena el estado de todas las ejecuciones.
 
 ```python
+{% raw %}
 # dags/pipeline_analitica_ventas.py
 from airflow import DAG
 from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
@@ -230,6 +233,7 @@ with DAG(
 
     # Definición de dependencias
     ingestar_crm >> transformar_silver >> test_calidad >> transformar_gold
+{% endraw %}
 ```
 
 ### 5.2 Monitorización y alertas en Airflow
@@ -392,6 +396,7 @@ Las herramientas de capa semántica modernas incluyen:
 - **LookML de Looker**: el lenguaje de modelado de Looker para definir dimensiones, métricas y exploraciones reutilizables.
 
 ```yaml
+{% raw %}
 # dbt/models/metrics/metricas_ventas.yml — definición de métricas con MetricFlow
 metrics:
   - name: ingresos_totales
@@ -416,6 +421,7 @@ metrics:
       denominator:
         name: leads_total
         agg: count_distinct
+{% endraw %}
 ```
 
 ### 8.3 Data Contracts

@@ -512,6 +512,7 @@ Para importar el dashboard en Grafana: Dashboards → Import → cargar el JSON 
 Las alertas se configuran en Prometheus mediante PrometheusRules. Ejemplos relevantes:
 
 ```yaml
+{% raw %}
 - alert: GPUTemperaturaAlta
   expr: DCGM_FI_DEV_GPU_TEMP > 85
   for: 5m
@@ -535,6 +536,7 @@ Las alertas se configuran en Prometheus mediante PrometheusRules. Ejemplos relev
     severity: info
   annotations:
     summary: "GPU infrautilizada: posible problema de pipeline de datos"
+{% endraw %}
 ```
 
 ### 7.5 Node Exporter para CPU, RAM y disco

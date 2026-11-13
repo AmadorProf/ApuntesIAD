@@ -708,6 +708,7 @@ models:
 **Tests singulares (custom SQL):** Se implementan como ficheros `.sql` en la carpeta `tests/` que devuelven los registros que violan la condición. Si la consulta devuelve cero filas, el test pasa; si devuelve una o más filas, el test falla:
 
 ```sql
+{% raw %}
 -- tests/test_importe_mayor_que_coste.sql
 -- Falla si hay ventas donde el importe es menor que el coste declarado
 SELECT
@@ -717,6 +718,7 @@ SELECT
 FROM {{ ref("ventas_diarias") }} v
 JOIN {{ ref("productos") }} p ON v.codigo_producto = p.codigo_producto
 WHERE v.importe < p.precio_coste
+{% endraw %}
 ```
 
 Los tests de dbt se ejecutan con `dbt test` y pueden integrarse en los pipelines de CI/CD mediante GitHub Actions, GitLab CI u otras plataformas. El paquete de la comunidad `dbt-expectations` añade decenas de tests adicionales inspirados directamente en Great Expectations, incluyendo tests de distribución estadística y de anomalías.

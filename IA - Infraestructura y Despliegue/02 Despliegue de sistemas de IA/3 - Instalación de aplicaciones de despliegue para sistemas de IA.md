@@ -586,11 +586,12 @@ ingress:
   host: "fraud-model.internal.example.com"
 ```
 
-### 6.3 Templating con `{{ .Values }}`
+{% raw %}### 6.3 Templating con `{{ .Values }}`{% endraw %}
 
-Los templates de Helm utilizan la sintaxis de Go templates con el prefijo `{{ .Values }}` para referenciar los valores del chart. El archivo `_helpers.tpl` define funciones reutilizables que evitan la repetición en los templates:
+{% raw %}Los templates de Helm utilizan la sintaxis de Go templates con el prefijo `{{ .Values }}` para referenciar los valores del chart. El archivo `_helpers.tpl` define funciones reutilizables que evitan la repetición en los templates:{% endraw %}
 
 ```yaml
+{% raw %}
 # templates/deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -616,9 +617,10 @@ spec:
         - name: NVIDIA_VISIBLE_DEVICES
           value: "all"
         {{- end }}
+{% endraw %}
 ```
 
-La directiva `{{- if .Values.gpu.enabled }}` permite incluir o excluir bloques completos del manifest según los valores, haciendo el chart flexible sin duplicar código.
+{% raw %}La directiva `{{- if .Values.gpu.enabled }}` permite incluir o excluir bloques completos del manifest según los valores, haciendo el chart flexible sin duplicar código.{% endraw %}
 
 ### 6.4 Chart repositories y Helmfile para gestión de múltiples releases
 
@@ -688,6 +690,7 @@ tolerations:
 En el template del Deployment, los bloques condicionales y la serialización YAML nativa de Helm gestionan la configuración de nodo de forma limpia:
 
 ```yaml
+{% raw %}
 {{- if .Values.gpu.enabled }}
 runtimeClassName: {{ .Values.gpu.runtimeClass }}
 {{- end }}
@@ -699,6 +702,7 @@ nodeSelector:
 tolerations:
   {{- toYaml . | nindent 8 }}
 {{- end }}
+{% endraw %}
 ```
 
 ---
@@ -795,6 +799,7 @@ grype sbom:fraud-model-sbom.spdx.json
 **Integración en CI/CD con GitHub Actions**
 
 ```yaml
+{% raw %}
 - name: Scan image with Trivy
   uses: aquasecurity/trivy-action@master
   with:
@@ -809,6 +814,7 @@ grype sbom:fraud-model-sbom.spdx.json
   if: always()
   with:
     sarif_file: trivy-results.sarif
+{% endraw %}
 ```
 
 ### 7.5 Actualización controlada de dependencias con Dependabot y Renovate
@@ -908,7 +914,7 @@ Como parte obligatoria, el estudiante debe además crear una segunda versión de
 
 **Objetivo:** Desarrollar un Helm chart reutilizable para despliegue de servicios de inferencia de ML y gestionar múltiples releases en distintos entornos mediante Helmfile.
 
-**Descripción:** El estudiante debe crear desde cero un Helm chart llamado `ml-inference` que incluya: (1) un Deployment con soporte opcional para GPU mediante condicionales en los templates usando `{{ if .Values.gpu.enabled }}`, (2) un Service de tipo ClusterIP, (3) un HorizontalPodAutoscaler configurable con mínimo y máximo de réplicas y target de CPU, (4) un ConfigMap para parámetros de configuración del modelo, y (5) un `values.yaml` con valores por defecto razonables y documentados con comentarios.
+{% raw %}**Descripción:** El estudiante debe crear desde cero un Helm chart llamado `ml-inference` que incluya: (1) un Deployment con soporte opcional para GPU mediante condicionales en los templates usando `{{ if .Values.gpu.enabled }}`, (2) un Service de tipo ClusterIP, (3) un HorizontalPodAutoscaler configurable con mínimo y máximo de réplicas y target de CPU, (4) un ConfigMap para parámetros de configuración del modelo, y (5) un `values.yaml` con valores por defecto razonables y documentados con comentarios.{% endraw %}
 
 El estudiante debe verificar el chart con `helm lint` y `helm template` antes de instalarlo. A continuación, debe crear tres conjuntos de values files (`dev-values.yaml`, `staging-values.yaml`, `prod-values.yaml`) con configuraciones diferenciadas para cada entorno en cuanto a número de réplicas, recursos de CPU/memoria y habilitación de escalado automático. Por último, debe gestionar el despliegue de los tres releases con un `helmfile.yaml` en namespaces separados, verificando con `kubectl` que los recursos de cada entorno tienen los valores esperados.
 

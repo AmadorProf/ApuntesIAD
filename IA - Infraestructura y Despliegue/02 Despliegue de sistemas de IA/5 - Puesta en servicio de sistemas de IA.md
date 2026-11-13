@@ -273,6 +273,7 @@ Las primeras horas después de un despliegue son el período de mayor riesgo. El
 Prometheus recopila métricas mediante scraping de los endpoints `/metrics` expuestos por el servicio de modelo. Las reglas de alerta se definen en YAML y Alertmanager gestiona el enrutamiento de las notificaciones.
 
 ```yaml
+{% raw %}
 groups:
   - name: modelo_ia_alertas
     rules:
@@ -315,6 +316,7 @@ groups:
           severity: critical
         annotations:
           summary: "Disponibilidad por debajo del 99.9%"
+{% endraw %}
 ```
 
 Alertmanager recibe las alertas de Prometheus y las enruta a los canales de notificación apropiados:

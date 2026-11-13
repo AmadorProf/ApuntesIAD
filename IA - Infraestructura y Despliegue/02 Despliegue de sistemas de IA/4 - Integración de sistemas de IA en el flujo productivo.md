@@ -69,6 +69,7 @@ Los jobs se ejecutan en paralelo por defecto y pueden encadenarse con `needs`. L
 El siguiente workflow ilustra el ciclo completo: lint, tests unitarios, entrenamiento condicional, evaluación, registro y despliegue.
 
 ```yaml
+{% raw %}
 name: ML Pipeline
 
 on:
@@ -164,6 +165,7 @@ jobs:
           echo "$KUBECONFIG_DATA" | base64 -d > /tmp/kubeconfig
           kubectl --kubeconfig /tmp/kubeconfig set image deployment/model-serving \
             model-server=registry.example.com/model:${{ github.sha }}
+{% endraw %}
 ```
 
 ### 3.4 Caché de dependencias en Actions
@@ -440,6 +442,7 @@ El pipeline de datos (por ejemplo, una tarea de Airflow) ejecuta esta llamada al
 En el workflow de GitHub Actions, el evento se recoge así:
 
 ```yaml
+{% raw %}
 on:
   repository_dispatch:
     types: [new_data_available]
@@ -450,6 +453,7 @@ jobs:
     steps:
       - name: Get dataset version from event
         run: echo "Dataset version: ${{ github.event.client_payload.dataset_version }}"
+{% endraw %}
 ```
 
 ### 6.3 Gestión de dependencias entre pipelines

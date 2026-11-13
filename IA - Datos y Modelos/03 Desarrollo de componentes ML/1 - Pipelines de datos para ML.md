@@ -223,7 +223,7 @@ airflow dags backfill \
   mi_dag_id
 ```
 
-Para que el backfill funcione correctamente, las tareas deben ser idempotentes y usar la variable de plantilla `{{ ds }}` (la fecha de ejecución) en lugar de `datetime.now()`.
+{% raw %}Para que el backfill funcione correctamente, las tareas deben ser idempotentes y usar la variable de plantilla `{{ ds }}` (la fecha de ejecución) en lugar de `datetime.now()`.{% endraw %}
 
 ### 4.7 Ejemplo completo: DAG de ingesta, transformación y validación
 

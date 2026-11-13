@@ -1,3 +1,7 @@
+---
+title: "0 - Resumen del módulo — Explotación de servicios de datos"
+---
+
 # Explotación de servicios de datos
 
 **Competencia que desarrolla:** implementar la plataforma de servicios de IA mediante la asignación de recursos y el procesamiento integral de datos multimodales, series temporales y asistentes virtuales, garantizando la valoración predictiva y la extracción de conocimiento.

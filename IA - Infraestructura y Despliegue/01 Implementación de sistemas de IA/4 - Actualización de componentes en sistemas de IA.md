@@ -1,3 +1,7 @@
+---
+title: "4 - Actualización de componentes en sistemas de IA"
+---
+
 # Actualización de componentes en sistemas de IA
 
 ---

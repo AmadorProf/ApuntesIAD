@@ -1,3 +1,7 @@
+---
+title: "0 - Resumen del módulo — Procesamiento de datos"
+---
+
 # Procesamiento de datos para IA
 
 **Competencia que desarrolla:** procesar los datos del dominio mediante extracción, saneamiento y validación para garantizar su calidad y trazabilidad, seleccionar atributos clave y configurar conjuntos óptimos que aseguren la eficiencia algorítmica y el cumplimiento normativo.

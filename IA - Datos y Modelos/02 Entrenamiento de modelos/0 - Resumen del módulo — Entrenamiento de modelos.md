@@ -1,3 +1,7 @@
+---
+title: "0 - Resumen del módulo — Entrenamiento de modelos"
+---
+
 # Entrenamiento de modelos
 
 **Competencia que desarrolla:** implementar la estrategia de entrenamiento mediante el análisis del problema, la configuración de arquitecturas y parámetros, el diseño de modelos de Machine Learning y su versionado para garantizar trazabilidad y despliegue.

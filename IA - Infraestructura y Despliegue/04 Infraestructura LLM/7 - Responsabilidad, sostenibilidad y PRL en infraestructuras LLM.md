@@ -1,3 +1,7 @@
+---
+title: "7 - Responsabilidad, sostenibilidad y PRL en infraestructuras LLM"
+---
+
 # Responsabilidad, sostenibilidad y PRL en infraestructuras LLM
 
 ---

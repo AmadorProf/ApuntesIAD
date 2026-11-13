@@ -1,3 +1,7 @@
+---
+title: "4 - Visión artificial sobre imágenes y vídeo"
+---
+
 # Visión artificial sobre imágenes y vídeo
 
 ---

@@ -1,3 +1,7 @@
+---
+title: "1 - Integración de componentes físicos y equipos para sistemas de IA"
+---
+
 # Integración de componentes físicos y equipos para sistemas de IA
 
 ---

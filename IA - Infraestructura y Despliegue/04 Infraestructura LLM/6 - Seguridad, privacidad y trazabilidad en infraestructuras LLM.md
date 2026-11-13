@@ -1,3 +1,7 @@
+---
+title: "6 - Seguridad, privacidad y trazabilidad en infraestructuras LLM"
+---
+
 # Seguridad, privacidad y trazabilidad en infraestructuras LLM
 
 ---

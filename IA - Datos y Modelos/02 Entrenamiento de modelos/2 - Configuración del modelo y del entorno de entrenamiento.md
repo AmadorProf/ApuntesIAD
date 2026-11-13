@@ -1,3 +1,7 @@
+---
+title: "2 - Configuración del modelo y del entorno de entrenamiento"
+---
+
 # Configuración del modelo y del entorno de entrenamiento
 
 **Módulo:** Entrenamiento de Modelos  

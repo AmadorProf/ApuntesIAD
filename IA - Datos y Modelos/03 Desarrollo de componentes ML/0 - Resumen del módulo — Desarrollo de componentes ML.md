@@ -1,3 +1,7 @@
+---
+title: "0 - Resumen del módulo — Desarrollo de componentes ML"
+---
+
 # Desarrollo de componentes ML
 
 **Competencia que desarrolla:** desarrollar soluciones de aprendizaje automático de extremo a extremo, desde el diseño de *pipelines* de datos multimodales y la implementación de modelos robustos hasta su integración en producción, asegurando trazabilidad y actualización tecnológica.

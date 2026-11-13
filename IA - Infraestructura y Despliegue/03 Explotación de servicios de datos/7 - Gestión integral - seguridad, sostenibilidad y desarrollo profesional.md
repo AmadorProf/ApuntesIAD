@@ -1,3 +1,7 @@
+---
+title: "7 - Gestión integral - seguridad, sostenibilidad y desarrollo profesional"
+---
+
 # Gestión integral - seguridad, sostenibilidad y desarrollo profesional
 
 ---

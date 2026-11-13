@@ -1,3 +1,7 @@
+---
+title: "0 - Resumen del módulo — Implementación de sistemas de IA"
+---
+
 # Implementación de sistemas de IA
 
 **Competencia que desarrolla:** gestionar el ciclo de vida de los componentes de equipos y aplicaciones en sistemas de IA mediante configuración, inventariado y actualización, resolviendo incidencias técnicas para garantizar la disponibilidad y explotación óptima de la plataforma.

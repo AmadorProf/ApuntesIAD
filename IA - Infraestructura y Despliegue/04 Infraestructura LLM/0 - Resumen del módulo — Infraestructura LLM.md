@@ -1,3 +1,7 @@
+---
+title: "0 - Resumen del módulo — Infraestructura LLM"
+---
+
 # Infraestructura LLM
 
 **Competencia que desarrolla:** implementar el despliegue técnico de soluciones basadas en LLMs, desde la infraestructura y configuración de inferencia hasta su puesta en servicio, garantizando rendimiento, seguridad, trazabilidad y uso responsable.

@@ -1,3 +1,7 @@
+---
+title: "8 - Responsabilidad, sostenibilidad, PRL y gestión de residuos en despliegues de IA"
+---
+
 # Responsabilidad, sostenibilidad, PRL y gestión de residuos en despliegues de IA
 
 ---

@@ -1,3 +1,7 @@
+---
+title: "2 - Componentes de interacción con el modelo LLM"
+---
+
 # Componentes de interacción con el modelo LLM
 
 **Módulo:** Soluciones LLM  

@@ -1,3 +1,7 @@
+---
+title: "2 - Selección y dimensionamiento de recursos para LLMs"
+---
+
 # Selección y dimensionamiento de recursos para LLMs
 
 ---

@@ -1,3 +1,7 @@
+---
+title: "3 - Implementación de componentes de IA para su explotación"
+---
+
 # Implementación de componentes de IA para su explotación
 
 ---

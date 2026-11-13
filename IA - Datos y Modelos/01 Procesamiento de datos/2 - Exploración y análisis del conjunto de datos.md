@@ -1,3 +1,7 @@
+---
+title: "2 - Exploración y análisis del conjunto de datos"
+---
+
 # Exploración y análisis del conjunto de datos
 
 **Módulo:** Procesamiento de datos para IA  

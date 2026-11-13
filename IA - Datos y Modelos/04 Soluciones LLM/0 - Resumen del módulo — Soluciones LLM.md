@@ -1,3 +1,7 @@
+---
+title: "0 - Resumen del módulo — Soluciones LLM"
+---
+
 # Soluciones LLM
 
 **Competencia que desarrolla:** gestionar soluciones basadas en modelos de lenguaje de gran tamaño (LLMs), desde la planificación y el despliegue hasta la supervisión de agentes autónomos y su integración con otros sistemas, asegurando funcionamiento, seguridad y trazabilidad.

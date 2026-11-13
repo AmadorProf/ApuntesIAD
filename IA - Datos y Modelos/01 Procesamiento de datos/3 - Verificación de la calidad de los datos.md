@@ -1,3 +1,7 @@
+---
+title: "3 - Verificación de la calidad de los datos"
+---
+
 # Verificación de la calidad de los datos
 
 **Módulo:** Procesamiento de datos para IA

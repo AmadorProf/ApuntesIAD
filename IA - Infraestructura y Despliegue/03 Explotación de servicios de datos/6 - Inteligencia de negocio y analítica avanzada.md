@@ -1,3 +1,7 @@
+---
+title: "6 - Inteligencia de negocio y analítica avanzada"
+---
+
 # Inteligencia de negocio y analítica avanzada
 
 ---

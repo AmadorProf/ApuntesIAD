@@ -1,3 +1,7 @@
+---
+title: "3 - Operativización del entrenamiento"
+---
+
 # Operativización del entrenamiento
 
 **Módulo:** Entrenamiento de Modelos  

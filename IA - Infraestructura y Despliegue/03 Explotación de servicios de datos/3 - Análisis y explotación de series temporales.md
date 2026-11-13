@@ -1,3 +1,7 @@
+---
+title: "3 - Análisis y explotación de series temporales"
+---
+
 # Análisis y explotación de series temporales
 
 ---

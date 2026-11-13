@@ -3,40 +3,24 @@
 [![Página web](https://img.shields.io/badge/Página_web-ver-4A90E2?style=flat-square&logo=github)](https://amadorprof.github.io/ApuntesIAD/)
 [![Licencia CC BY 4.0](https://img.shields.io/badge/Licencia-CC%20BY%204.0-green?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
 
-Apuntes organizados en **55 unidades didácticas** distribuidas en 8 módulos. Cada unidad incluye una presentación interactiva en HTML y el temario completo en Markdown.
+Apuntes en prosa sobre Inteligencia Artificial, organizados en dos bloques y 8 módulos, con 55 unidades didácticas más los 8 resúmenes de módulo.
 
-## Módulos
+## Bloques y módulos
 
 | Bloque | Módulo | Título |
 |--------|--------|--------|
-| 1 | MP01 | Procesamiento de datos para IA |
-| 1 | MP02 | Entrenamiento de modelos de aprendizaje automático |
-| 1 | MP03 | Desarrollo de componentes para sistemas de ML |
-| 1 | MP04 | Soluciones basadas en modelos de lenguaje (LLMs) |
-| 2 | MP01 | Implementación de sistemas de IA |
-| 2 | MP02 | Despliegue de sistemas de IA |
-| 2 | MP03 | Explotación de servicios de datos y analítica |
-| 2 | MP04 | Infraestructura para la ejecución de LLMs |
+| IA — Datos y Modelos | 01 | Procesamiento de datos |
+| IA — Datos y Modelos | 02 | Entrenamiento de modelos |
+| IA — Datos y Modelos | 03 | Desarrollo de componentes ML |
+| IA — Datos y Modelos | 04 | Soluciones LLM |
+| IA — Infraestructura y Despliegue | 01 | Implementación de sistemas de IA |
+| IA — Infraestructura y Despliegue | 02 | Despliegue de sistemas de IA |
+| IA — Infraestructura y Despliegue | 03 | Explotación de servicios de datos |
+| IA — Infraestructura y Despliegue | 04 | Infraestructura LLM |
 
 ## Cómo usar estos apuntes
 
-Accede a la [página web](https://amadorprof.github.io/ApuntesIAD/) para navegar por todas las unidades. Desde ahí puedes:
-
-- Abrir la **presentación** de cada UD (slides interactivos generados con Marp).
-- Leer el **temario** completo en formato Markdown renderizado.
-- Marcar las UDs como vistas para llevar tu propio progreso (se guarda en el navegador).
-- Usar el **buscador** para filtrar por nombre de unidad.
-
-## Apuntes en prosa (sin diapositivas)
-
-Los mismos contenidos, organizados y numerados como en el cuaderno de notas original (sin slides, solo texto):
-
-- [IA - Datos y Modelos](https://amadorprof.github.io/ApuntesIAD/viewer.html?file=IA%20-%20Datos%20y%20Modelos/00-indice.md)
-- [IA - Infraestructura y Despliegue](https://amadorprof.github.io/ApuntesIAD/viewer.html?file=IA%20-%20Infraestructura%20y%20Despliegue/00-indice.md)
-
-## Tecnología
-
-Slides generados con [Marp](https://marp.app/). Desplegado automáticamente en GitHub Pages mediante GitHub Actions en cada push a `main`.
+Accede a la [página web](https://amadorprof.github.io/ApuntesIAD/) y entra por el índice de cada bloque. Cada módulo empieza con un resumen (competencia que desarrolla) y sigue con sus unidades: resultados de aprendizaje, contenidos y criterios de evaluación.
 
 ---
 

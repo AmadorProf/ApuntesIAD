@@ -1,3 +1,7 @@
+---
+title: "0 - Resumen del módulo — Despliegue de sistemas de IA"
+---
+
 # Despliegue de sistemas de IA
 
 **Competencia que desarrolla:** configurar la infraestructura de sistemas de IA aplicando el plan de aprovisionamiento, instalación y configuración, integrándola en el flujo productivo e implementando medidas que garantizan la calidad del servicio y su trazabilidad.

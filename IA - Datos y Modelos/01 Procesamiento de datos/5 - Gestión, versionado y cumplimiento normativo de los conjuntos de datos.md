@@ -1,3 +1,7 @@
+---
+title: "5 - Gestión, versionado y cumplimiento normativo de los conjuntos de datos"
+---
+
 # Gestión, versionado y cumplimiento normativo de los conjuntos de datos
 
 **Módulo:** Procesamiento de datos para IA

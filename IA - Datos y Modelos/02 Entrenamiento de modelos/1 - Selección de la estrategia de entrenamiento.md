@@ -1,3 +1,7 @@
+---
+title: "1 - Selección de la estrategia de entrenamiento"
+---
+
 # Selección de la estrategia de entrenamiento
 
 **Módulo:** Entrenamiento de Modelos  

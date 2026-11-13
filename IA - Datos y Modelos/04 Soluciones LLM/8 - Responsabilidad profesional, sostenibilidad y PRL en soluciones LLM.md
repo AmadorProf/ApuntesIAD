@@ -1,3 +1,7 @@
+---
+title: "8 - Responsabilidad profesional, sostenibilidad y PRL en soluciones LLM"
+---
+
 # Responsabilidad profesional, sostenibilidad y PRL en soluciones LLM
 
 ---

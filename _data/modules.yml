@@ -1,0 +1,195 @@
+- title: D00 · Índice del bloque
+  filename: IA - Datos y Modelos/00-indice
+  url: IA%20-%20Datos%20y%20Modelos/00-indice
+- title: D01 · 0 - Resumen del módulo — Procesamiento de datos
+  filename: IA - Datos y Modelos/01 Procesamiento de datos/0 - Resumen del módulo — Procesamiento de datos
+  url: IA%20-%20Datos%20y%20Modelos/01%20Procesamiento%20de%20datos/0%20-%20Resumen%20del%20m%C3%B3dulo%20%E2%80%94%20Procesamiento%20de%20datos
+- title: D01 · 1 - Extracción de datos desde las fuentes
+  filename: IA - Datos y Modelos/01 Procesamiento de datos/1 - Extracción de datos desde las fuentes
+  url: IA%20-%20Datos%20y%20Modelos/01%20Procesamiento%20de%20datos/1%20-%20Extracci%C3%B3n%20de%20datos%20desde%20las%20fuentes
+- title: D01 · 2 - Exploración y análisis del conjunto de datos
+  filename: IA - Datos y Modelos/01 Procesamiento de datos/2 - Exploración y análisis del conjunto de datos
+  url: IA%20-%20Datos%20y%20Modelos/01%20Procesamiento%20de%20datos/2%20-%20Exploraci%C3%B3n%20y%20an%C3%A1lisis%20del%20conjunto%20de%20datos
+- title: D01 · 3 - Verificación de la calidad de los datos
+  filename: IA - Datos y Modelos/01 Procesamiento de datos/3 - Verificación de la calidad de los datos
+  url: IA%20-%20Datos%20y%20Modelos/01%20Procesamiento%20de%20datos/3%20-%20Verificaci%C3%B3n%20de%20la%20calidad%20de%20los%20datos
+- title: D01 · 4 - Preprocesamiento y partición de datos
+  filename: IA - Datos y Modelos/01 Procesamiento de datos/4 - Preprocesamiento y partición de datos
+  url: IA%20-%20Datos%20y%20Modelos/01%20Procesamiento%20de%20datos/4%20-%20Preprocesamiento%20y%20partici%C3%B3n%20de%20datos
+- title: D01 · 5 - Gestión, versionado y cumplimiento normativo de los conjuntos de datos
+  filename: IA - Datos y Modelos/01 Procesamiento de datos/5 - Gestión, versionado y cumplimiento normativo de los conjuntos de datos
+  url: IA%20-%20Datos%20y%20Modelos/01%20Procesamiento%20de%20datos/5%20-%20Gesti%C3%B3n%2C%20versionado%20y%20cumplimiento%20normativo%20de%20los%20conjuntos%20de%20datos
+- title: D01 · 6 - Trabajo responsable, sostenible y prevención de riesgos laborales
+  filename: IA - Datos y Modelos/01 Procesamiento de datos/6 - Trabajo responsable, sostenible y prevención de riesgos laborales
+  url: IA%20-%20Datos%20y%20Modelos/01%20Procesamiento%20de%20datos/6%20-%20Trabajo%20responsable%2C%20sostenible%20y%20prevenci%C3%B3n%20de%20riesgos%20laborales
+- title: D02 · 0 - Resumen del módulo — Entrenamiento de modelos
+  filename: IA - Datos y Modelos/02 Entrenamiento de modelos/0 - Resumen del módulo — Entrenamiento de modelos
+  url: IA%20-%20Datos%20y%20Modelos/02%20Entrenamiento%20de%20modelos/0%20-%20Resumen%20del%20m%C3%B3dulo%20%E2%80%94%20Entrenamiento%20de%20modelos
+- title: D02 · 1 - Selección de la estrategia de entrenamiento
+  filename: IA - Datos y Modelos/02 Entrenamiento de modelos/1 - Selección de la estrategia de entrenamiento
+  url: IA%20-%20Datos%20y%20Modelos/02%20Entrenamiento%20de%20modelos/1%20-%20Selecci%C3%B3n%20de%20la%20estrategia%20de%20entrenamiento
+- title: D02 · 2 - Configuración del modelo y del entorno de entrenamiento
+  filename: IA - Datos y Modelos/02 Entrenamiento de modelos/2 - Configuración del modelo y del entorno de entrenamiento
+  url: IA%20-%20Datos%20y%20Modelos/02%20Entrenamiento%20de%20modelos/2%20-%20Configuraci%C3%B3n%20del%20modelo%20y%20del%20entorno%20de%20entrenamiento
+- title: D02 · 3 - Operativización del entrenamiento
+  filename: IA - Datos y Modelos/02 Entrenamiento de modelos/3 - Operativización del entrenamiento
+  url: IA%20-%20Datos%20y%20Modelos/02%20Entrenamiento%20de%20modelos/3%20-%20Operativizaci%C3%B3n%20del%20entrenamiento
+- title: D02 · 4 - Evaluación del modelo entrenado
+  filename: IA - Datos y Modelos/02 Entrenamiento de modelos/4 - Evaluación del modelo entrenado
+  url: IA%20-%20Datos%20y%20Modelos/02%20Entrenamiento%20de%20modelos/4%20-%20Evaluaci%C3%B3n%20del%20modelo%20entrenado
+- title: D02 · 5 - Versionado y ficha técnica del modelo
+  filename: IA - Datos y Modelos/02 Entrenamiento de modelos/5 - Versionado y ficha técnica del modelo
+  url: IA%20-%20Datos%20y%20Modelos/02%20Entrenamiento%20de%20modelos/5%20-%20Versionado%20y%20ficha%20t%C3%A9cnica%20del%20modelo
+- title: D02 · 6 - Trabajo responsable, sostenible y PRL en entrenamiento de modelos
+  filename: IA - Datos y Modelos/02 Entrenamiento de modelos/6 - Trabajo responsable, sostenible y PRL en entrenamiento de modelos
+  url: IA%20-%20Datos%20y%20Modelos/02%20Entrenamiento%20de%20modelos/6%20-%20Trabajo%20responsable%2C%20sostenible%20y%20PRL%20en%20entrenamiento%20de%20modelos
+- title: D03 · 0 - Resumen del módulo — Desarrollo de componentes ML
+  filename: IA - Datos y Modelos/03 Desarrollo de componentes ML/0 - Resumen del módulo — Desarrollo de componentes ML
+  url: IA%20-%20Datos%20y%20Modelos/03%20Desarrollo%20de%20componentes%20ML/0%20-%20Resumen%20del%20m%C3%B3dulo%20%E2%80%94%20Desarrollo%20de%20componentes%20ML
+- title: D03 · 1 - Pipelines de datos para ML
+  filename: IA - Datos y Modelos/03 Desarrollo de componentes ML/1 - Pipelines de datos para ML
+  url: IA%20-%20Datos%20y%20Modelos/03%20Desarrollo%20de%20componentes%20ML/1%20-%20Pipelines%20de%20datos%20para%20ML
+- title: D03 · 2 - Despliegue de modelos con frameworks especializados
+  filename: IA - Datos y Modelos/03 Desarrollo de componentes ML/2 - Despliegue de modelos con frameworks especializados
+  url: IA%20-%20Datos%20y%20Modelos/03%20Desarrollo%20de%20componentes%20ML/2%20-%20Despliegue%20de%20modelos%20con%20frameworks%20especializados
+- title: D03 · 3 - Integración de modelos de ML en aplicaciones
+  filename: IA - Datos y Modelos/03 Desarrollo de componentes ML/3 - Integración de modelos de ML en aplicaciones
+  url: IA%20-%20Datos%20y%20Modelos/03%20Desarrollo%20de%20componentes%20ML/3%20-%20Integraci%C3%B3n%20de%20modelos%20de%20ML%20en%20aplicaciones
+- title: D03 · 4 - Validación de la calidad de los componentes de ML
+  filename: IA - Datos y Modelos/03 Desarrollo de componentes ML/4 - Validación de la calidad de los componentes de ML
+  url: IA%20-%20Datos%20y%20Modelos/03%20Desarrollo%20de%20componentes%20ML/4%20-%20Validaci%C3%B3n%20de%20la%20calidad%20de%20los%20componentes%20de%20ML
+- title: D03 · 5 - Protocolización y documentación técnica en sistemas ML
+  filename: IA - Datos y Modelos/03 Desarrollo de componentes ML/5 - Protocolización y documentación técnica en sistemas ML
+  url: IA%20-%20Datos%20y%20Modelos/03%20Desarrollo%20de%20componentes%20ML/5%20-%20Protocolizaci%C3%B3n%20y%20documentaci%C3%B3n%20t%C3%A9cnica%20en%20sistemas%20ML
+- title: D03 · 6 - Vigilancia tecnológica en sistemas de ML
+  filename: IA - Datos y Modelos/03 Desarrollo de componentes ML/6 - Vigilancia tecnológica en sistemas de ML
+  url: IA%20-%20Datos%20y%20Modelos/03%20Desarrollo%20de%20componentes%20ML/6%20-%20Vigilancia%20tecnol%C3%B3gica%20en%20sistemas%20de%20ML
+- title: D03 · 7 - Gestión integral - seguridad, sostenibilidad y ética en sistemas ML
+  filename: IA - Datos y Modelos/03 Desarrollo de componentes ML/7 - Gestión integral - seguridad, sostenibilidad y ética en sistemas ML
+  url: IA%20-%20Datos%20y%20Modelos/03%20Desarrollo%20de%20componentes%20ML/7%20-%20Gesti%C3%B3n%20integral%20-%20seguridad%2C%20sostenibilidad%20y%20%C3%A9tica%20en%20sistemas%20ML
+- title: D04 · 0 - Resumen del módulo — Soluciones LLM
+  filename: IA - Datos y Modelos/04 Soluciones LLM/0 - Resumen del módulo — Soluciones LLM
+  url: IA%20-%20Datos%20y%20Modelos/04%20Soluciones%20LLM/0%20-%20Resumen%20del%20m%C3%B3dulo%20%E2%80%94%20Soluciones%20LLM
+- title: D04 · 1 - Análisis del caso de uso y selección del modelo LLM
+  filename: IA - Datos y Modelos/04 Soluciones LLM/1 - Análisis del caso de uso y selección del modelo LLM
+  url: IA%20-%20Datos%20y%20Modelos/04%20Soluciones%20LLM/1%20-%20An%C3%A1lisis%20del%20caso%20de%20uso%20y%20selecci%C3%B3n%20del%20modelo%20LLM
+- title: D04 · 2 - Componentes de interacción con el modelo LLM
+  filename: IA - Datos y Modelos/04 Soluciones LLM/2 - Componentes de interacción con el modelo LLM
+  url: IA%20-%20Datos%20y%20Modelos/04%20Soluciones%20LLM/2%20-%20Componentes%20de%20interacci%C3%B3n%20con%20el%20modelo%20LLM
+- title: D04 · 3 - Integración con fuentes, herramientas y sistemas (RAG)
+  filename: IA - Datos y Modelos/04 Soluciones LLM/3 - Integración con fuentes, herramientas y sistemas (RAG)
+  url: IA%20-%20Datos%20y%20Modelos/04%20Soluciones%20LLM/3%20-%20Integraci%C3%B3n%20con%20fuentes%2C%20herramientas%20y%20sistemas%20%28RAG%29
+- title: D04 · 4 - Comportamientos agénticos con LLMs
+  filename: IA - Datos y Modelos/04 Soluciones LLM/4 - Comportamientos agénticos con LLMs
+  url: IA%20-%20Datos%20y%20Modelos/04%20Soluciones%20LLM/4%20-%20Comportamientos%20ag%C3%A9nticos%20con%20LLMs
+- title: D04 · 5 - Validación y puesta en servicio de soluciones LLM
+  filename: IA - Datos y Modelos/04 Soluciones LLM/5 - Validación y puesta en servicio de soluciones LLM
+  url: IA%20-%20Datos%20y%20Modelos/04%20Soluciones%20LLM/5%20-%20Validaci%C3%B3n%20y%20puesta%20en%20servicio%20de%20soluciones%20LLM
+- title: D04 · 6 - Seguridad, privacidad y uso ético de LLMs
+  filename: IA - Datos y Modelos/04 Soluciones LLM/6 - Seguridad, privacidad y uso ético de LLMs
+  url: IA%20-%20Datos%20y%20Modelos/04%20Soluciones%20LLM/6%20-%20Seguridad%2C%20privacidad%20y%20uso%20%C3%A9tico%20de%20LLMs
+- title: D04 · 7 - Vigilancia tecnológica en el ecosistema de LLMs
+  filename: IA - Datos y Modelos/04 Soluciones LLM/7 - Vigilancia tecnológica en el ecosistema de LLMs
+  url: IA%20-%20Datos%20y%20Modelos/04%20Soluciones%20LLM/7%20-%20Vigilancia%20tecnol%C3%B3gica%20en%20el%20ecosistema%20de%20LLMs
+- title: D04 · 8 - Responsabilidad profesional, sostenibilidad y PRL en soluciones LLM
+  filename: IA - Datos y Modelos/04 Soluciones LLM/8 - Responsabilidad profesional, sostenibilidad y PRL en soluciones LLM
+  url: IA%20-%20Datos%20y%20Modelos/04%20Soluciones%20LLM/8%20-%20Responsabilidad%20profesional%2C%20sostenibilidad%20y%20PRL%20en%20soluciones%20LLM
+- title: I00 · Índice del bloque
+  filename: IA - Infraestructura y Despliegue/00-indice
+  url: IA%20-%20Infraestructura%20y%20Despliegue/00-indice
+- title: I01 · 0 - Resumen del módulo — Implementación de sistemas de IA
+  filename: IA - Infraestructura y Despliegue/01 Implementación de sistemas de IA/0 - Resumen del módulo — Implementación de sistemas de IA
+  url: IA%20-%20Infraestructura%20y%20Despliegue/01%20Implementaci%C3%B3n%20de%20sistemas%20de%20IA/0%20-%20Resumen%20del%20m%C3%B3dulo%20%E2%80%94%20Implementaci%C3%B3n%20de%20sistemas%20de%20IA
+- title: I01 · 1 - Integración de componentes físicos y equipos para sistemas de IA
+  filename: IA - Infraestructura y Despliegue/01 Implementación de sistemas de IA/1 - Integración de componentes físicos y equipos para sistemas de IA
+  url: IA%20-%20Infraestructura%20y%20Despliegue/01%20Implementaci%C3%B3n%20de%20sistemas%20de%20IA/1%20-%20Integraci%C3%B3n%20de%20componentes%20f%C3%ADsicos%20y%20equipos%20para%20sistemas%20de%20IA
+- title: I01 · 2 - Administración de componentes de aplicaciones de IA
+  filename: IA - Infraestructura y Despliegue/01 Implementación de sistemas de IA/2 - Administración de componentes de aplicaciones de IA
+  url: IA%20-%20Infraestructura%20y%20Despliegue/01%20Implementaci%C3%B3n%20de%20sistemas%20de%20IA/2%20-%20Administraci%C3%B3n%20de%20componentes%20de%20aplicaciones%20de%20IA
+- title: I01 · 3 - Implementación de componentes de IA para su explotación
+  filename: IA - Infraestructura y Despliegue/01 Implementación de sistemas de IA/3 - Implementación de componentes de IA para su explotación
+  url: IA%20-%20Infraestructura%20y%20Despliegue/01%20Implementaci%C3%B3n%20de%20sistemas%20de%20IA/3%20-%20Implementaci%C3%B3n%20de%20componentes%20de%20IA%20para%20su%20explotaci%C3%B3n
+- title: I01 · 4 - Actualización de componentes en sistemas de IA
+  filename: IA - Infraestructura y Despliegue/01 Implementación de sistemas de IA/4 - Actualización de componentes en sistemas de IA
+  url: IA%20-%20Infraestructura%20y%20Despliegue/01%20Implementaci%C3%B3n%20de%20sistemas%20de%20IA/4%20-%20Actualizaci%C3%B3n%20de%20componentes%20en%20sistemas%20de%20IA
+- title: I01 · 5 - Resolución de incidencias en plataformas de IA
+  filename: IA - Infraestructura y Despliegue/01 Implementación de sistemas de IA/5 - Resolución de incidencias en plataformas de IA
+  url: IA%20-%20Infraestructura%20y%20Despliegue/01%20Implementaci%C3%B3n%20de%20sistemas%20de%20IA/5%20-%20Resoluci%C3%B3n%20de%20incidencias%20en%20plataformas%20de%20IA
+- title: I01 · 6 - Prevención de riesgos laborales y gestión de residuos en entornos de sistemas de IA
+  filename: IA - Infraestructura y Despliegue/01 Implementación de sistemas de IA/6 - Prevención de riesgos laborales y gestión de residuos en entornos de sistemas de IA
+  url: IA%20-%20Infraestructura%20y%20Despliegue/01%20Implementaci%C3%B3n%20de%20sistemas%20de%20IA/6%20-%20Prevenci%C3%B3n%20de%20riesgos%20laborales%20y%20gesti%C3%B3n%20de%20residuos%20en%20entornos%20de%20sistemas%20de%20IA
+- title: I02 · 0 - Resumen del módulo — Despliegue de sistemas de IA
+  filename: IA - Infraestructura y Despliegue/02 Despliegue de sistemas de IA/0 - Resumen del módulo — Despliegue de sistemas de IA
+  url: IA%20-%20Infraestructura%20y%20Despliegue/02%20Despliegue%20de%20sistemas%20de%20IA/0%20-%20Resumen%20del%20m%C3%B3dulo%20%E2%80%94%20Despliegue%20de%20sistemas%20de%20IA
+- title: I02 · 1 - Preparación del despliegue de sistemas de IA
+  filename: IA - Infraestructura y Despliegue/02 Despliegue de sistemas de IA/1 - Preparación del despliegue de sistemas de IA
+  url: IA%20-%20Infraestructura%20y%20Despliegue/02%20Despliegue%20de%20sistemas%20de%20IA/1%20-%20Preparaci%C3%B3n%20del%20despliegue%20de%20sistemas%20de%20IA
+- title: I02 · 2 - Despliegue de infraestructura para sistemas de IA
+  filename: IA - Infraestructura y Despliegue/02 Despliegue de sistemas de IA/2 - Despliegue de infraestructura para sistemas de IA
+  url: IA%20-%20Infraestructura%20y%20Despliegue/02%20Despliegue%20de%20sistemas%20de%20IA/2%20-%20Despliegue%20de%20infraestructura%20para%20sistemas%20de%20IA
+- title: I02 · 3 - Instalación de aplicaciones de despliegue para sistemas de IA
+  filename: IA - Infraestructura y Despliegue/02 Despliegue de sistemas de IA/3 - Instalación de aplicaciones de despliegue para sistemas de IA
+  url: IA%20-%20Infraestructura%20y%20Despliegue/02%20Despliegue%20de%20sistemas%20de%20IA/3%20-%20Instalaci%C3%B3n%20de%20aplicaciones%20de%20despliegue%20para%20sistemas%20de%20IA
+- title: I02 · 4 - Integración de sistemas de IA en el flujo productivo
+  filename: IA - Infraestructura y Despliegue/02 Despliegue de sistemas de IA/4 - Integración de sistemas de IA en el flujo productivo
+  url: IA%20-%20Infraestructura%20y%20Despliegue/02%20Despliegue%20de%20sistemas%20de%20IA/4%20-%20Integraci%C3%B3n%20de%20sistemas%20de%20IA%20en%20el%20flujo%20productivo
+- title: I02 · 5 - Puesta en servicio de sistemas de IA
+  filename: IA - Infraestructura y Despliegue/02 Despliegue de sistemas de IA/5 - Puesta en servicio de sistemas de IA
+  url: IA%20-%20Infraestructura%20y%20Despliegue/02%20Despliegue%20de%20sistemas%20de%20IA/5%20-%20Puesta%20en%20servicio%20de%20sistemas%20de%20IA
+- title: I02 · 6 - Monitorización y mantenimiento de sistemas de IA en producción
+  filename: IA - Infraestructura y Despliegue/02 Despliegue de sistemas de IA/6 - Monitorización y mantenimiento de sistemas de IA en producción
+  url: IA%20-%20Infraestructura%20y%20Despliegue/02%20Despliegue%20de%20sistemas%20de%20IA/6%20-%20Monitorizaci%C3%B3n%20y%20mantenimiento%20de%20sistemas%20de%20IA%20en%20producci%C3%B3n
+- title: I02 · 7 - Gobernanza, trazabilidad y cumplimiento normativo en sistemas de IA desplegados
+  filename: IA - Infraestructura y Despliegue/02 Despliegue de sistemas de IA/7 - Gobernanza, trazabilidad y cumplimiento normativo en sistemas de IA desplegados
+  url: IA%20-%20Infraestructura%20y%20Despliegue/02%20Despliegue%20de%20sistemas%20de%20IA/7%20-%20Gobernanza%2C%20trazabilidad%20y%20cumplimiento%20normativo%20en%20sistemas%20de%20IA%20desplegados
+- title: I02 · 8 - Responsabilidad, sostenibilidad, PRL y gestión de residuos en despliegues de IA
+  filename: IA - Infraestructura y Despliegue/02 Despliegue de sistemas de IA/8 - Responsabilidad, sostenibilidad, PRL y gestión de residuos en despliegues de IA
+  url: IA%20-%20Infraestructura%20y%20Despliegue/02%20Despliegue%20de%20sistemas%20de%20IA/8%20-%20Responsabilidad%2C%20sostenibilidad%2C%20PRL%20y%20gesti%C3%B3n%20de%20residuos%20en%20despliegues%20de%20IA
+- title: I03 · 0 - Resumen del módulo — Explotación de servicios de datos
+  filename: IA - Infraestructura y Despliegue/03 Explotación de servicios de datos/0 - Resumen del módulo — Explotación de servicios de datos
+  url: IA%20-%20Infraestructura%20y%20Despliegue/03%20Explotaci%C3%B3n%20de%20servicios%20de%20datos/0%20-%20Resumen%20del%20m%C3%B3dulo%20%E2%80%94%20Explotaci%C3%B3n%20de%20servicios%20de%20datos
+- title: I03 · 1 - Implementación de la plataforma de servicios de IA
+  filename: IA - Infraestructura y Despliegue/03 Explotación de servicios de datos/1 - Implementación de la plataforma de servicios de IA
+  url: IA%20-%20Infraestructura%20y%20Despliegue/03%20Explotaci%C3%B3n%20de%20servicios%20de%20datos/1%20-%20Implementaci%C3%B3n%20de%20la%20plataforma%20de%20servicios%20de%20IA
+- title: I03 · 2 - Valoración predictiva de datos estructurados
+  filename: IA - Infraestructura y Despliegue/03 Explotación de servicios de datos/2 - Valoración predictiva de datos estructurados
+  url: IA%20-%20Infraestructura%20y%20Despliegue/03%20Explotaci%C3%B3n%20de%20servicios%20de%20datos/2%20-%20Valoraci%C3%B3n%20predictiva%20de%20datos%20estructurados
+- title: I03 · 3 - Análisis y explotación de series temporales
+  filename: IA - Infraestructura y Despliegue/03 Explotación de servicios de datos/3 - Análisis y explotación de series temporales
+  url: IA%20-%20Infraestructura%20y%20Despliegue/03%20Explotaci%C3%B3n%20de%20servicios%20de%20datos/3%20-%20An%C3%A1lisis%20y%20explotaci%C3%B3n%20de%20series%20temporales
+- title: I03 · 4 - Visión artificial sobre imágenes y vídeo
+  filename: IA - Infraestructura y Despliegue/03 Explotación de servicios de datos/4 - Visión artificial sobre imágenes y vídeo
+  url: IA%20-%20Infraestructura%20y%20Despliegue/03%20Explotaci%C3%B3n%20de%20servicios%20de%20datos/4%20-%20Visi%C3%B3n%20artificial%20sobre%20im%C3%A1genes%20y%20v%C3%ADdeo
+- title: I03 · 5 - Procesamiento de lenguaje natural y voz
+  filename: IA - Infraestructura y Despliegue/03 Explotación de servicios de datos/5 - Procesamiento de lenguaje natural y voz
+  url: IA%20-%20Infraestructura%20y%20Despliegue/03%20Explotaci%C3%B3n%20de%20servicios%20de%20datos/5%20-%20Procesamiento%20de%20lenguaje%20natural%20y%20voz
+- title: I03 · 6 - Inteligencia de negocio y analítica avanzada
+  filename: IA - Infraestructura y Despliegue/03 Explotación de servicios de datos/6 - Inteligencia de negocio y analítica avanzada
+  url: IA%20-%20Infraestructura%20y%20Despliegue/03%20Explotaci%C3%B3n%20de%20servicios%20de%20datos/6%20-%20Inteligencia%20de%20negocio%20y%20anal%C3%ADtica%20avanzada
+- title: I03 · 7 - Gestión integral - seguridad, sostenibilidad y desarrollo profesional
+  filename: IA - Infraestructura y Despliegue/03 Explotación de servicios de datos/7 - Gestión integral - seguridad, sostenibilidad y desarrollo profesional
+  url: IA%20-%20Infraestructura%20y%20Despliegue/03%20Explotaci%C3%B3n%20de%20servicios%20de%20datos/7%20-%20Gesti%C3%B3n%20integral%20-%20seguridad%2C%20sostenibilidad%20y%20desarrollo%20profesional
+- title: I04 · 0 - Resumen del módulo — Infraestructura LLM
+  filename: IA - Infraestructura y Despliegue/04 Infraestructura LLM/0 - Resumen del módulo — Infraestructura LLM
+  url: IA%20-%20Infraestructura%20y%20Despliegue/04%20Infraestructura%20LLM/0%20-%20Resumen%20del%20m%C3%B3dulo%20%E2%80%94%20Infraestructura%20LLM
+- title: I04 · 1 - Análisis de requisitos del sistema LLM
+  filename: IA - Infraestructura y Despliegue/04 Infraestructura LLM/1 - Análisis de requisitos del sistema LLM
+  url: IA%20-%20Infraestructura%20y%20Despliegue/04%20Infraestructura%20LLM/1%20-%20An%C3%A1lisis%20de%20requisitos%20del%20sistema%20LLM
+- title: I04 · 2 - Selección y dimensionamiento de recursos para LLMs
+  filename: IA - Infraestructura y Despliegue/04 Infraestructura LLM/2 - Selección y dimensionamiento de recursos para LLMs
+  url: IA%20-%20Infraestructura%20y%20Despliegue/04%20Infraestructura%20LLM/2%20-%20Selecci%C3%B3n%20y%20dimensionamiento%20de%20recursos%20para%20LLMs
+- title: I04 · 3 - Preparación del entorno de ejecución para LLMs
+  filename: IA - Infraestructura y Despliegue/04 Infraestructura LLM/3 - Preparación del entorno de ejecución para LLMs
+  url: IA%20-%20Infraestructura%20y%20Despliegue/04%20Infraestructura%20LLM/3%20-%20Preparaci%C3%B3n%20del%20entorno%20de%20ejecuci%C3%B3n%20para%20LLMs
+- title: I04 · 4 - Puesta en servicio del modelo LLM
+  filename: IA - Infraestructura y Despliegue/04 Infraestructura LLM/4 - Puesta en servicio del modelo LLM
+  url: IA%20-%20Infraestructura%20y%20Despliegue/04%20Infraestructura%20LLM/4%20-%20Puesta%20en%20servicio%20del%20modelo%20LLM
+- title: I04 · 5 - Validación de la capacidad operativa del sistema LLM
+  filename: IA - Infraestructura y Despliegue/04 Infraestructura LLM/5 - Validación de la capacidad operativa del sistema LLM
+  url: IA%20-%20Infraestructura%20y%20Despliegue/04%20Infraestructura%20LLM/5%20-%20Validaci%C3%B3n%20de%20la%20capacidad%20operativa%20del%20sistema%20LLM
+- title: I04 · 6 - Seguridad, privacidad y trazabilidad en infraestructuras LLM
+  filename: IA - Infraestructura y Despliegue/04 Infraestructura LLM/6 - Seguridad, privacidad y trazabilidad en infraestructuras LLM
+  url: IA%20-%20Infraestructura%20y%20Despliegue/04%20Infraestructura%20LLM/6%20-%20Seguridad%2C%20privacidad%20y%20trazabilidad%20en%20infraestructuras%20LLM
+- title: I04 · 7 - Responsabilidad, sostenibilidad y PRL en infraestructuras LLM
+  filename: IA - Infraestructura y Despliegue/04 Infraestructura LLM/7 - Responsabilidad, sostenibilidad y PRL en infraestructuras LLM
+  url: IA%20-%20Infraestructura%20y%20Despliegue/04%20Infraestructura%20LLM/7%20-%20Responsabilidad%2C%20sostenibilidad%20y%20PRL%20en%20infraestructuras%20LLM

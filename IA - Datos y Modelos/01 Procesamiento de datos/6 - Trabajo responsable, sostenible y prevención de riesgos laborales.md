@@ -1,3 +1,7 @@
+---
+title: "6 - Trabajo responsable, sostenible y prevención de riesgos laborales"
+---
+
 # Trabajo responsable, sostenible y prevención de riesgos laborales
 
 ---

@@ -1,3 +1,7 @@
+---
+title: "7 - Gobernanza, trazabilidad y cumplimiento normativo en sistemas de IA desplegados"
+---
+
 # Gobernanza, trazabilidad y cumplimiento normativo en sistemas de IA desplegados
 
 ---

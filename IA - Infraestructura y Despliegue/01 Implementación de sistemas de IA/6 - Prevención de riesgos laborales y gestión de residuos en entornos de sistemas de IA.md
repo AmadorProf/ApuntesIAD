@@ -1,3 +1,7 @@
+---
+title: "6 - Prevención de riesgos laborales y gestión de residuos en entornos de sistemas de IA"
+---
+
 # Prevención de riesgos laborales y gestión de residuos en entornos de sistemas de IA
 
 ---

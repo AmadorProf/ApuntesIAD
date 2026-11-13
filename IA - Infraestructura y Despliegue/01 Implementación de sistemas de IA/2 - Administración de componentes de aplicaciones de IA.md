@@ -1,3 +1,7 @@
+---
+title: "2 - Administración de componentes de aplicaciones de IA"
+---
+
 # Administración de componentes de aplicaciones de IA
 
 ---

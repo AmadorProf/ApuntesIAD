@@ -1,3 +1,7 @@
+---
+title: "7 - Gestión integral - seguridad, sostenibilidad y ética en sistemas ML"
+---
+
 # Gestión integral - seguridad, sostenibilidad y ética en sistemas ML
 
 ---

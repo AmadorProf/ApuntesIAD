@@ -1,3 +1,7 @@
+---
+title: "6 - Trabajo responsable, sostenible y PRL en entrenamiento de modelos"
+---
+
 # Trabajo responsable, sostenible y PRL en entrenamiento de modelos
 
 **Módulo:** Entrenamiento de Modelos  

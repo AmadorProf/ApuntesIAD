@@ -1,0 +1,4 @@
+# Excluir estilos del detector de lenguaje de GitHub
+*.css linguist-detectable=false
+*.scss linguist-detectable=false
+*.min.js linguist-detectable=false

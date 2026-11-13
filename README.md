@@ -1,26 +1,35 @@
-# Apuntes de IA — Datos, Modelos, Infraestructura y Despliegue
+# Apuntes de IA y Datos — 55 UDs · 8 módulos
 
 [![Página web](https://img.shields.io/badge/Página_web-ver-4A90E2?style=flat-square&logo=github)](https://amadorprof.github.io/ApuntesIAD/)
 [![Licencia CC BY 4.0](https://img.shields.io/badge/Licencia-CC%20BY%204.0-green?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
 
-Apuntes de Inteligencia Artificial para FP de grado superior: 63 unidades en 8 módulos, repartidos en dos bloques. Cada unidad combina teoría, ejemplos de código y buenas prácticas profesionales (seguridad, sostenibilidad, prevención de riesgos laborales).
+Apuntes organizados en **55 unidades didácticas** distribuidas en 8 módulos. Cada unidad incluye una presentación interactiva en HTML y el temario completo en Markdown.
 
-## Bloques y módulos
+## Módulos
 
 | Bloque | Módulo | Título |
 |--------|--------|--------|
-| IA · Datos y Modelos | 01 | Procesamiento de datos |
-| IA · Datos y Modelos | 02 | Entrenamiento de modelos |
-| IA · Datos y Modelos | 03 | Desarrollo de componentes ML |
-| IA · Datos y Modelos | 04 | Soluciones LLM |
-| IA · Infraestructura y Despliegue | 01 | Implementación de sistemas de IA |
-| IA · Infraestructura y Despliegue | 02 | Despliegue de sistemas de IA |
-| IA · Infraestructura y Despliegue | 03 | Explotación de servicios de datos |
-| IA · Infraestructura y Despliegue | 04 | Infraestructura LLM |
+| 1 | MP01 | Procesamiento de datos para IA |
+| 1 | MP02 | Entrenamiento de modelos de aprendizaje automático |
+| 1 | MP03 | Desarrollo de componentes para sistemas de ML |
+| 1 | MP04 | Soluciones basadas en modelos de lenguaje (LLMs) |
+| 2 | MP01 | Implementación de sistemas de IA |
+| 2 | MP02 | Despliegue de sistemas de IA |
+| 2 | MP03 | Explotación de servicios de datos y analítica |
+| 2 | MP04 | Infraestructura para la ejecución de LLMs |
 
 ## Cómo usar estos apuntes
 
-Accede a la [página web](https://amadorprof.github.io/ApuntesIAD/) y elige un bloque. Cada módulo empieza con un resumen y sigue con sus unidades numeradas; dentro de un módulo cada unidad asume la anterior. Los dos bloques son independientes entre sí.
+Accede a la [página web](https://amadorprof.github.io/ApuntesIAD/) para navegar por todas las unidades. Desde ahí puedes:
+
+- Abrir la **presentación** de cada UD (slides interactivos generados con Marp).
+- Leer el **temario** completo en formato Markdown renderizado.
+- Marcar las UDs como vistas para llevar tu propio progreso (se guarda en el navegador).
+- Usar el **buscador** para filtrar por nombre de unidad.
+
+## Tecnología
+
+Slides generados con [Marp](https://marp.app/). Desplegado automáticamente en GitHub Pages mediante GitHub Actions en cada push a `main`.
 
 ---
 

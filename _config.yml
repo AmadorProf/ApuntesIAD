@@ -1,8 +1,0 @@
-title: Apuntes de IA — Datos, Modelos, Infraestructura y Despliegue
-description: Apuntes de IA para FP de grado superior — 8 módulos en dos bloques, 63 unidades
-theme: jekyll-theme-cayman
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default

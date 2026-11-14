@@ -1,6 +1,10 @@
 title: Apuntes de IA y Datos
 description: Apuntes de IA — Datos y Modelos, Infraestructura y Despliegue — 8 módulos, 55 unidades
 theme: jekyll-theme-cayman
+remote_theme: AmadorProf/jekyll-tema-apuntes
+github_repo: AmadorProf/ApuntesIAD
+plugins:
+  - jekyll-remote-theme
 defaults:
   - scope:
       path: ""
